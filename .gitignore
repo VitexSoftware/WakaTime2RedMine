@@ -1,0 +1,7 @@
+.env
+
+/vendor/
+/nbproject/private/
+/.phpunit.result.cache
+/.build/
+/nbproject/

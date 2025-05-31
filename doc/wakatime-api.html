@@ -1,0 +1,4235 @@
+<!DOCTYPE html>
+<html lang="en" data-placeholder-focus="false">
+  <!--
+                 ,▄▄▓██████▓▄▄,
+             ▄▓███████████████████▄
+          ▄████████▀▀▀╙╙╙╙▀▀▀████████▄
+        ▄██████▀└              └▀██████▄
+       ██████└                    └▀█████
+      █████▀                        ╙█████µ
+     █████¬                    ▄█▓    █████
+    ╟████⌐      ╓▄           ╓███▀     ████▌
+    █████       ███▌        ▓███─      █████
+    █████        ▀███,,▓▓ ╓███▀        ╟████
+    █████         └██████████`         █████
+    ╙████▌          ▀██▀███▀          ▐████▌
+     ╟████▄                          ╓█████
+      ▀█████                        ▓█████
+       ╙██████,                  ,▄█████▀
+         ▀██████▓▄            ▄▓██████▀
+           ╙████████████████████████▀
+              ╙▀████████████████▀╙
+                    └╙╙╙╙╙╙└─
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" value="notranslate" />
+    <meta http-equiv="Content-Language" content="en_US" />
+    <title>WakaTime API Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer reference documentation for the WakaTime API.">
+    <meta name="author" content="WakaTime">
+    <meta name="hostname" content="wakatime.com">
+    <link rel="author" href="/humans.txt" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#527da4">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="twitter:site" content="@WakaTime" />
+    <meta name="twitter:domain" content="wakatime.com" />
+    <meta property="og:site_name" content="WakaTime" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WakaTime API Docs" />
+    <meta property="og:description" content="Developer reference documentation for the WakaTime API." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/ >
+    
+    <link type="text/css" rel="stylesheet" href="/static/sdist/617f808b7eb8d7d70fbcb7c5c3347869.css">
+    
+  <link type="text/css" rel="stylesheet" href="/static/sdist/d87eaf607fbccf847f859150e1d2ec76.css">
+
+    
+  </head>
+
+    <body  class="color_scheme-Light">
+
+    
+  
+    
+    
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+
+  <div class="waka-navbar navbar navbar-default navbar-light navbar-static-top navbar-large  navbar-border" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-content">
+          <span class="sr-only">Toggle navigation</span>
+          
+            <span class="fa fa-bars"></span>
+          
+        </button>
+        
+          <a class="navbar-brand" href="/">
+            
+              <img alt="WakaTime Logo" src="/static/img/wakatime.svg" />
+            
+            <span>WakaTime</span>
+          </a>
+        
+      </div>
+
+      
+        <div id="navbar-content" class="collapse navbar-collapse navbar-right">
+          
+            <ul class="nav navbar-nav navbar-left">
+              
+                
+                
+              
+              <li><a href="/leaders" class="navbar-link">Leaderboards</a></li>
+              <li><a href="/teams" class="navbar-link">Teams</a></li>
+              <li><a href="/plugins" class="navbar-link">Plugins</a></li>
+              <li><a href="/developers" class="navbar-link">Docs</a></li>
+            </ul>
+          
+          <ul class="nav navbar-nav">
+            <li><a href="/signup" id="navbar-signup-btn" class="btn btn-orange btn-raised navbar-btn navbar-signup-btn">Sign Up</a></li>
+            <li><a href="/login" class="btn btn-transparent btn-raised navbar-btn m-right-xs-30 m-right-sm-0">Log In</a></li>
+          </ul>
+          
+        </div>
+      
+
+
+    </div>
+  </div>
+
+
+  
+
+
+    <noscript>
+  <div class="container">
+    <div class="row" style="margin-top:80px;">
+      <div class="alert alert-info">
+        <p><strong>Oh Snap!</strong> WakaTime needs JavaScript for all the pretty graphs and charts.</p>
+        <p>Please enable JavaScript in your browser to view the site.</p>
+      </div>
+    </div>
+  </div>
+</noscript>
+
+    
+  
+  <div class="container-fluid m-top-xs-40 p-left-lg-20 p-right-lg-80">
+
+    <div class="row m-bottom-xs-80">
+      <div class="col-md-3 col-sm-4">
+        <div id="api-nav">
+  <ul class="nav nav-stacked nav-tabs" role="tablist">
+    
+      <li class="nav-section-title">WakaTime API v1</li>
+      
+        <li><a href="#introduction">Introduction</a></li>
+      
+        <li><a href="#authentication">Authentication</a></li>
+      
+        <li><a href="#building-plugins">Writing your own plugin</a></li>
+      
+        <li><a href="#embedding">Embedding Charts &amp; JSON</a></li>
+      
+    
+      <li class="nav-section-title">Resource Endpoints</li>
+      
+        <li><a href="#all_time_since_today">All Time Since Today</a></li>
+      
+        <li><a href="#commit">Commit</a></li>
+      
+        <li><a href="#commits">Commits</a></li>
+      
+        <li><a href="#custom_rules">Custom Rules</a></li>
+      
+        <li><a href="#custom_rules_progress">Custom Rules Progress</a></li>
+      
+        <li><a href="#data_dumps">Data Dumps</a></li>
+      
+        <li><a href="#durations">Durations</a></li>
+      
+        <li><a href="#editors">Editors</a></li>
+      
+        <li><a href="#external_durations">External Durations</a></li>
+      
+        <li><a href="#goal">Goal</a></li>
+      
+        <li><a href="#goals">Goals</a></li>
+      
+        <li><a href="#heartbeats">Heartbeats</a></li>
+      
+        <li><a href="#insights">Insights</a></li>
+      
+        <li><a href="#leaders">Leaders</a></li>
+      
+        <li><a href="#machine_names">Machine Names</a></li>
+      
+        <li><a href="#meta">Meta</a></li>
+      
+        <li><a href="#org_custom_rules">Org Custom Rules</a></li>
+      
+        <li><a href="#org_dashboard_durations">Org Dashboard Durations</a></li>
+      
+        <li><a href="#org_dashboard_member_durations">Org Dashboard Member Durations</a></li>
+      
+        <li><a href="#org_dashboard_member_summaries">Org Dashboard Member Summaries</a></li>
+      
+        <li><a href="#org_dashboard_members">Org Dashboard Members</a></li>
+      
+        <li><a href="#org_dashboard_summaries">Org Dashboard Summaries</a></li>
+      
+        <li><a href="#org_dashboards">Org Dashboards</a></li>
+      
+        <li><a href="#orgs">Orgs</a></li>
+      
+        <li><a href="#private_leaderboards">Private Leaderboards</a></li>
+      
+        <li><a href="#private_leaderboards_leaders">Private Leaderboards Leaders</a></li>
+      
+        <li><a href="#program_languages">Program Languages</a></li>
+      
+        <li><a href="#projects">Projects</a></li>
+      
+        <li><a href="#stats">Stats</a></li>
+      
+        <li><a href="#stats_aggregated">Stats Aggregated</a></li>
+      
+        <li><a href="#status_bar">Status Bar</a></li>
+      
+        <li><a href="#summaries">Summaries</a></li>
+      
+        <li><a href="#user_agents">User Agents</a></li>
+      
+        <li><a href="#users">Users</a></li>
+      
+    
+  </ul>
+</div>
+      </div>
+      <div class="col-md-9 col-sm-8 m-top-xs-30 m-top-sm-0 markdown-body">
+
+        
+
+        <a name="introduction"></a>
+<div class="api-section white-well">
+
+  <h1 id="introduction">Introduction</h1>
+
+  <p>The WakaTime API follows common <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">REST<i class="feather feather-external-link"></i></a> conventions. This means you should use GET requests to retrieve data and POST, PUT, or PATCH requests to modify data. All API requests must be done over HTTPS.</p>
+  <p>Every response will be a JSON object, which is a key-value hash. Data for a resource will be returned in the key named <code>data</code>. Errors will be returned in the key named <code>errors</code> or <code>error</code>.</p>
+  <p>HTTP response codes indicate the status of your request:</p>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200">200 - Ok</a>: The request has succeeded.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201">201 - Created</a>: The request has been fulfilled and resulted in a new resource being created.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202">202 - Accepted</a>: The request has been accepted for processing, but the processing has not been completed. The <a href="#stats">stats resource</a> may return this code.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302">302 - Redirect</a>: Sometimes we return 302 instead of 429, resulting in a request timeout. If that’s the case, try spreading out the number of requests you’re making over a few minutes instead of all at once.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400">400 - Bad Request</a>: The request is invalid. Check error message and try again.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401">401 - Unauthorized</a>: The request requires authentication, or your authentication was invalid.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403">403 - Forbidden</a>: You are authenticated, but do not have permission to access the resource.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404">404 - Not Found</a>: The resource does not exist.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429">429 - Too Many Requests</a>: You are being rate limited, try making fewer than 10 requests per second on average over any 5 minute period.</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500">500 - Server Error</a>: Service unavailable, try again later.</li>
+  </ul>
+  <p>All API resources have the url prefix <code>https://api.wakatime.com/api/v1/</code>.</p>
+
+  <p>When using the WakaTime trademark or logo in your application, please follow our <a href="/logos-and-usage">usage guidelines</a>.</p>
+
+  <a name="introduction.security"></a>
+  <h4 class="m-top-xs-20">Security</h4>
+
+  <p>Do <strong>NOT</strong> use the API with your secret key on a public website. Instead, create an <a href="/share">embeddable chart</a> that's safe to share publicly. Choose the JSON format to securely access your coding activity with JavaScript:</p>
+  <p><a href="/share">Embeddable SVG Charts and JSON</a></p>
+
+</div>
+
+        <a name="authentication"></a>
+<div class="api-section white-well">
+<h1 id="authentication">Authentication</h1>
+
+<p><h4 class="m-top-xs-30">OAuth 2.0 Endpoints</h4></p>
+<p><a href="/apps">Create an app</a> to get an OAuth 2.0 client token.</p>
+
+<p>The OAuth 2.0 provider endpoints are:</p>
+<ul>
+  <li><code>https://wakatime.com/oauth/authorize</code> - Redirect your users here to request permission to access their account. Required url arguments are <code>client_id</code>, <code>response_type</code> of <code>code</code> or <code>token</code>, <code>redirect_uri</code>. Optional parameters are <code>scope</code>, <code>state</code>, <code>force_approve</code>.</li>
+  <li><code>https://wakatime.com/oauth/token</code> - Make a server-side POST request here to get the secret access token. Required data is <code>client_id</code>, <code>client_secret</code>, <code>redirect_uri</code> must be the same url used in authorize step, <code>grant_type</code> of <code>authorization_code</code>, and the <code>code</code> received from the authorize step.</li>
+  <li><code>https://wakatime.com/oauth/revoke</code> - Make a server-side POST request here to invalidate a secret access token. Required data is <code>client_id</code>, <code>client_secret</code>, and the <code>token</code> (access or refresh) to be invalidated.</li>
+</ul>
+<p>For information about using these endpoints, see <a href="https://tools.ietf.org/html/rfc6749" target="_blank">RFC6749 OAuth 2.0<i class="feather feather-external-link"></i></a>.</p>
+
+<p><h4 class="m-top-xs-30">Using Access Token</h4></p>
+<p>After getting the bearer (access) token from <code>https://wakatime.com/oauth/token</code>, you can now make authenticated api calls using the Authorization request header (<a href="https://tools.ietf.org/html/rfc6750#section-2.1" target="_blank">RFC 6750<i class="feather feather-external-link"></i></a>).</p>
+<p>For example, if your user's access token is <code>waka_tok_12345</code>, you would add this header to your request:<br /><code>Authorization: Bearer waka_tok_12345</code>.</p>
+<p>Alternatively, you can authenticate with url args named <code>access_token</code>, or just <code>token</code> and <code>app_secret</code>, <code>client_secret</code>, or just <code>secret</code>.</p>
+
+<p><h4 class="m-top-xs-30">Using the Refresh Token</h4></p>
+<p>You should always get a <code>refresh_token</code> from the <code>/oauth/token</code> response. The <code>refresh_token</code> can be used when your <code>access_token</code> has expired, to re-authorize without having to prompt the user.</p>
+<p>To use the <code>refresh_token</code>, make a POST request to <code>https://wakatime.com/oauth/token</code> to get a new secret access token. Required data is <code>client_id</code>, <code>client_secret</code>, <code>redirect_uri</code> must be the same url used in authorize step, <code>grant_type</code> of <code>refresh_token</code>, and the <code>refresh_token</code> received from a previous token response.</p>
+
+<p><h4 class="m-top-xs-30">Revoking Tokens</h4></p>
+<p>
+  Your app should revoke tokens when users disconnect their WakaTime integration, delete their account on your app, or you no longer need access to a user’s account.
+  To revoke an access token, and it’s corresponding refresh token, send a <code>POST</code> request to <code>/oauth/revoke</code> containing your app’s client_id, client_secret, and the token (access or refresh token) that you would like to revoke.
+  Both JSON (<code>Content-Type: application/json</code>) and form-urlencoded (<code>Content-Type: application/x-www-form-urlencoded</code>) are supported as the POST body.
+  The response status will be 200 success if the token is successfully disabled.
+  If the token is already revoked or expired, this endpoint will still respond with a 200 success response.
+</p>
+<p>For example:</p>
+<p><code>POST /oauth/revoke HTTP/1.1
+Host: wakatime.com
+Content-Type: application/json
+
+{"client_id":"XXX","client_secret":"waka_sec_XXX","token":"waka_tok_12345"}
+</code></p>
+
+<p>To revoke all tokens for a user, send <code>user_id</code> along with your app’s <code>client_id</code> and <code>client_secret</code>:</p>
+<p><code>POST /oauth/revoke HTTP/1.1
+Host: wakatime.com
+Content-Type: application/x-www-form-urlencoded
+
+client_id=XXX
+client_secret=waka_sec_XXX
+user_id=12345
+</code></p>
+
+<p>Or, revoke all tokens for a user using a past access or refresh token for that user, with <code>all=true</code>:</p>
+<p><code>POST /oauth/revoke HTTP/1.1
+Host: wakatime.com
+Content-Type: application/x-www-form-urlencoded
+
+client_id=XXX
+client_secret=waka_sec_XXX
+all=true
+token=waka_tok_12345
+</code></p>
+
+<p>Or, revoke all tokens for all users of your app:</p>
+<p><code>POST /oauth/revoke HTTP/1.1
+Host: wakatime.com
+Content-Type: application/x-www-form-urlencoded
+
+client_id=XXX
+client_secret=waka_sec_XXX
+all=true
+</code></p>
+
+<a name="scopes"></a>
+<p><h4 class="m-top-xs-30">Scopes</h4></p>
+<p>Scopes are sent to the authorize url as a space or comma separated list, to request optional permissions for a user.</p>
+<ul>
+  <li><code>read_summaries</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a> including categories, dependencies, editors, languages, machines, operating systems, and projects. Consider instead requesting scopes for only the summaries you need. For ex: <code>scope=read_summaries.languages,read_summaries.editors</code> to only request access to the user’s language and editor summaries and stats.</li>
+  <li><code>read_summaries.categories</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s categories.</li>
+  <li><code>read_summaries.dependencies</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s dependencies.</li>
+  <li><code>read_summaries.editors</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s editors.</li>
+  <li><code>read_summaries.languages</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s languages.</li>
+  <li><code>read_summaries.machines</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s machines.</li>
+  <li><code>read_summaries.operating_systems</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s operating systems.</li>
+  <li><code>read_summaries.projects</code> - access user’s <a href="#summaries">Summaries</a> and <a href="#stats">Stats</a>, limited to the user’s projects.</li>
+  <li><code>read_stats</code> - access user’s <a href="#stats">Stats</a> including categories, dependencies, editors, languages, machines, operating systems, and projects. Consider instead requesting scopes for only the stats you need. For ex: <code>scope=read_stats.languages,read_stats.editors</code> to only request access to the user’s language and editor stats.</li>
+  <li><code>read_stats.best_day</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s best day in the requested time range.</li>
+  <li><code>read_stats.categories</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s categories.</li>
+  <li><code>read_stats.dependencies</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s dependencies.</li>
+  <li><code>read_stats.editors</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s editors.</li>
+  <li><code>read_stats.languages</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s languages.</li>
+  <li><code>read_stats.machines</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s machines.</li>
+  <li><code>read_stats.operating_systems</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s operating systems.</li>
+  <li><code>read_stats.projects</code> - access user’s <a href="#stats">Stats</a>, limited to the user’s projects.</li>
+  <li><code>read_goals</code> - access user’s <a href="#goals">Goals</a>.</li>
+  <li><code>read_orgs</code> - access user’s organizations, and coding activity for dashboard members.</li>
+  <li><code>write_orgs</code> - modify user’s organizations, and org dashboards.</li>
+  <li><code>read_private_leaderboards</code> - access user’s private leaderboards.</li>
+  <li><code>write_private_leaderboards</code> - modify user’s private leaderboards, including adding/removing members when current user had Admin or Owner role.</li>
+  <li><code>read_heartbeats</code> - access user’s coding activity, projects, files, editors, languages, operating systems, dependencies, <a href="#stats">Stats</a>, <a href="#durations">Durations</a>, <a href="#external_durations">External Durations</a>, and <a href="#heartbeats">Heartbeats</a>. If you don’t need access to Durations or Heartbeats, consider only requesting <code>read_summaries</code> scope instead.</li>
+  <li><code>write_heartbeats</code> - modify user’s coding activity with the ability to create, edit, and delete <a href="#heartbeats">Heartbeats</a> and <a href="#external_durations">External Durations</a>.</li>
+  <li><code>email</code> - access user’s private email address; not necessary for user’s public email and public profile info.</li>
+</ul>
+
+<p><h4 class="m-top-xs-30">Example</h4></p>
+<p>OAuth 2.0 authentication flow using <a href="https://rauth.readthedocs.org/en/latest/" target="_blank">rauth<i class="feather feather-external-link"></i></a> (Python):</p>
+<pre><code>#!/usr/bin/env python
+
+import hashlib
+import os
+import sys
+from rauth import OAuth2Service
+
+if sys.version_info[0] == 3:
+    raw_input = input
+
+print('Find your App Id at wakatime.com/apps')
+client_id = raw_input('Enter your App Id: ')
+client_secret = raw_input('Enter your App Secret: ')
+
+service = OAuth2Service(
+    client_id=client_id,  # your App ID from https://wakatime.com/apps
+    client_secret=client_secret,  # your App Secret from https://wakatime.com/apps
+    name='wakatime',
+    authorize_url='https://wakatime.com/oauth/authorize',
+    access_token_url='https://wakatime.com/oauth/token',
+    base_url='https://wakatime.com/api/v1/')
+
+redirect_uri = 'https://wakatime.com/oauth/test'
+state = hashlib.sha1(os.urandom(40)).hexdigest()
+params = {'scope': 'email,read_stats.languages',
+          'response_type': 'code',
+          'state': state,
+          'redirect_uri': redirect_uri}
+
+url = service.get_authorize_url(**params)
+
+print('**** Visit this url in your browser ****')
+print('*' * 80)
+print(url)
+print('*' * 80)
+print('**** After clicking Authorize, paste code here and press Enter ****')
+code = raw_input('Enter code from url: ')
+
+# Make sure returned state has not changed for security reasons, and exchange
+# code for an Access Token.
+headers = {'Accept': 'application/x-www-form-urlencoded'}
+print('Getting an access token...')
+session = service.get_auth_session(headers=headers,
+                                   data={'code': code,
+                                         'grant_type': 'authorization_code',
+                                         'redirect_uri': redirect_uri})
+
+print('Getting current user from API...')
+user = session.get('users/current').json()
+print('Authenticated via OAuth as {0}'.format(user['data']['email']))
+print("Getting user's code stats from API...")
+stats = session.get('users/current/stats')
+print(stats.text)</pre></code>
+
+<p>Using <code>refresh_token</code> to get a new <code>access_token</code> when the previous one has expired, using <a href="https://rauth.readthedocs.org/en/latest/" target="_blank">rauth<i class="feather feather-external-link"></i></a> (Python):</p>
+<pre><code>import requests
+from urllib.parse import parse_qsl
+
+refresh_token = dict(parse_qsl(session.access_token_response.text))['refresh_token']
+
+data = {
+    'grant_type': 'refresh_token',
+    'client_id': client_id,
+    'client_secret': client_secret,
+    'refresh_token': refresh_token,
+}
+resp = requests.post('https://wakatime.com/oauth/token', data=data, timeout=5)
+print(resp.text)
+# Or, using the rauth library:
+# session = service.get_auth_session(data=data)</pre></code>
+
+<p><h4 class="m-top-xs-30">Limits</h4></p>
+<p>Each <a href="/apps">app</a> is allowed 8 active OAuth tokens per user.</p>
+<p>New tokens are rate limited to 10 per user per hour.</p>
+<p>If an app creates more than 8 tokens for the same user then the oldest token is revoked to make room for the new token, except when hitting the 10 per hour rate limit.</p>
+<p>OAuth tokens using <code>response_type=code</code> expire after 365 days.</p>
+<p>OAuth tokens using <code>response_type=token</code> expire after 12 hours.</p>
+<p>Make sure to re-use tokens instead of requesting new ones, and revoke tokens if you’re no longer using them.</p>
+
+<p><h4 class="m-top-xs-30">400 Error (Invalid redirect_uri: Not valid for this client.)</h4></p>
+<p>If you see this error when running the example, add <code>https://wakatime.com/oauth/test</code> as an authorized redirect url in your <a href="/apps">App's settings</a>.</p>
+
+<p><h4 class="m-top-xs-30">Using API Key</h4></p>
+<p>Most apps should use OAuth, but you can also authenticate to the WakaTime API using your secret <a class="api-key-link" href="/settings/api-key" target="_blank">API Key<i class="feather feather-external-link"></i></a>.</p>
+<p>Using <a href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic Auth<i class="feather feather-external-link"></i></a> pass your <a class="api-key-link" href="/settings/api-key" target="_blank">API Key<i class="feather feather-external-link"></i></a> base64 encoded in the Authorization header. Don't forget to prepend <code>Basic </code> to your api key after base64 encoding it.</p>
+<p>For example, when using HTTP Basic Auth with an api key of <code>12345</code> you should add this header to your request:<br /><code>Authorization: Basic MTIzNDU=</code></p>
+<p>That’s because when you decode the base64 string <code>"MTIzNDU="</code> you get <code>"12345"</code>.</p>
+<p>Alternatively, you can pass your api key as a query parameter in your request like <code>?api_key=XXXX</code>.</p>
+
+<p>Do <strong>NOT</strong> use your API Key on a public website. Instead, use <a href="/share">embeddable charts and JSON</a>.</p>
+
+</div>
+
+        <a name="building-plugins"></a>
+<div class="api-section white-well">
+
+  <h1 id="building-plugins">Writing your own plugin</h1>
+
+  <p>
+  WakaTime plugins are extensions that run inside your text editor or IDE sending usage stats, called <a href="/faq#data-collected">heartbeats</a>, to your WakaTime Dashboard.
+  All official WakaTime plugins are open source on <a href="https://github.com/wakatime" target="_blank">GitHub<i class="feather feather-external-link"></i></a>.
+  </p>
+  <p>
+  When building your own editor plugin, use our <a href="help/creating-plugin">Creating a WakaTime plugin guide</a>.
+  </p>
+
+</div>
+
+        <a name="embedding"></a>
+<div class="api-section white-well">
+
+  <h1 id="embedding">Embedding Charts &amp; JSON</h1>
+
+  <p>
+  Want to share your WakaTime stats? Use the <a href="/share/embed">embeddable charts and JSON</a> to safely embed your coding activity on a public website without leaking your secret api key.
+  Select the JSON format for access to your code stats in JavaScript.
+  We don’t support <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">Cross-Origin Resource Sharing (CORS)<i class="feather feather-external-link"></i></a> because the only way to access your code stats safely in public JavaScript is with <a href="/share/embed">embeddable JSON</a>.
+  Embeddable JSON does support JSONP.
+  Embeddable charts and JSON use a one-time unique url and can be retracted to prevent future access to your code stats.
+  </p>
+  <p><strong>Never</strong> use the WakaTime API from a public website, except for <a href="/share">embeddables</a>. Using your secret api key in client-side JavaScript gives everyone on the internet full access to your WakaTime account.</p>
+
+</div>
+
+        
+          <a name="all_time_since_today"></a>
+<div class="api-section white-well">
+  <h1 id="all_time_since_today" style="margin-bottom:30px">All Time Since Today</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/all_time_since_today</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/all_time_since_today</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>The total time logged since account created, available even for Free accounts.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Shows the total time for a project, since project created.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_stats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="all_time_since_today-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "daily_average": &lt;float: average coding activity per day as seconds for the given range of time, including Other language&gt;,
+    "decimal": &lt;string: total coding activity in decimal format&gt;,
+    "digital": &lt;string: total coding activity in digital clock format&gt;,
+    "is_up_to_date": &lt;boolean: true if the stats are up to date; when false, a 202 response code is returned and stats will be refreshed soon&gt;,
+    "percent_calculated": &lt;integer: a number between 0 and 100 where 100 means the stats are up to date including Today’s time&gt;,
+    "range": {
+      "end": &lt;string: end of today as ISO 8601 UTC datetime&gt;,
+      "end_date": &lt;string: today as Date string in YEAR-MONTH-DAY format&gt;,
+      "end_text": &lt;string: today in human-readable format&gt;,
+      "start": &lt;string: start of user created day as ISO 8601 UTC datetime&gt;,
+      "start_date": &lt;string: day user was created in YEAR-MONTH-DAY format&gt;,
+      "start_text": &lt;string: day user was created in human-readable format&gt;,
+      "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+    }
+    "text": &lt;string: total time logged since account created as human readable string&gt;,
+    "timeout": &lt;integer: keystroke timeout setting in minutes&gt;,
+    "total_seconds": &lt;float: total number of seconds logged since account created&gt;,
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#all_time_since_today-GET" aria-expanded="false" aria-controls="all_time_since_today-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="commit"></a>
+<div class="api-section white-well">
+  <h1 id="commit" style="margin-bottom:30px">Commit</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/projects/:project/commits/:hash</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/projects/:project/commits/:hash</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A single commit from a WakaTime project showing the time spent coding on the commit.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>branch</code> - <code>String</code> - optional - Filter the commit to a branch; defaults to the repo’s default branch name.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="commit-GET" aria-expanded="false">
+      <pre><code>{
+  "commit": {
+    "author_avatar_url": &lt;string: url of author's avatar image&gt;
+    "author_date": &lt;string: time when commit was authored in ISO 8601 format&gt;,
+    "author_email": &lt;string: email address of author&gt;,
+    "author_html_url": &lt;string: link to author's profile on GitHub, Bitbucket, GitLab, etc&gt;,
+    "author_name": &lt;string: name of author&gt;,
+    "author_url": &lt;string: api url for author's profile&gt;,
+    "author_username": &lt;string: author's username&gt;,
+    "branch": &lt;string: branch name, for ex: master&gt;,
+    "committer_avatar_url": &lt;string: url of committer's avatar image&gt;,
+    "committer_date": &lt;string: commit time in ISO 8601 format&gt;,
+    "committer_email": &lt;string: email address of committer&gt;,
+    "committer_html_url": &lt;string: link to committer's profile on GitHub, Bitbucket, GitLab, etc&gt;,
+    "committer_name": &lt;string: name of committer&gt;,
+    "committer_url": &lt;string: api url for committer's profile&gt;,
+    "committer_username": &lt;string: committer's username&gt;,
+    "created_at": &lt;string: time commit was synced in ISO 8601 format&gt;,
+    "hash": &lt;string: revision control hash of this commit&gt;,
+    "html_url": &lt;string: link to an html page with details about current commit&gt;,
+    "human_readable_total": &lt;string: time coded in editor for this commit&gt;,
+    "human_readable_total_with_seconds": &lt;string: time coded in editor for this commit&gt;,
+    "id": &lt;string: unique id of commit&gt;,
+    "message": &lt;string: author's description of this commit&gt;,
+    "ref": &lt;string: refs/heads/master&gt;,
+    "total_seconds": &lt;float: time coded in editor for this commit&gt;,
+    "truncated_hash": &lt;string: truncated revision control hash of this commit&gt;,
+    "url": &lt;string: api url with details about current commit&gt;,
+  },
+  "branch": &lt;string: branch name containting the commit&gt;,
+  "project": {
+    "id": &lt;string: unique id of project&gt;,
+    "name": &lt;string: project name&gt;,
+    "privacy": &lt;string: project privacy setting&gt;,
+    "repository": {
+      "default_branch": &lt;string: default branch if given for this repo&gt;,
+      "description": &lt;string: remote repository description&gt;,
+      "fork_count": &lt;integer: number of repo forks if available&gt;
+      "full_name": &lt;string: username and repo name, ex: wakatime/wakadump&gt;,
+      "homepage": &lt;string: homepage of repository&gt;,
+      "html_url": &lt;string: html url for repository&gt;,
+      "id": &lt;string: unique id of repository&gt;,
+      "is_fork": &lt;boolean: whether this repo is a fork or original&gt;,
+      "is_private": &lt;boolean: whether this repo is private or public&gt;,
+      "last_synced_at": &lt;string: last time this repo was synced with remote provider iSO 8601 format&gt;,
+      "name": &lt;string: repository name&gt;,
+      "provider": &lt;string: remote provider of repository, ex: github&gt;,
+      "star_count": &lt;integer: number of repo stars if available&gt;
+      "url": &lt;string: api url of remote repository&gt;,
+      "watch_count": &lt;integer: number of watchers of repo if available&gt;,
+    }
+  },
+  "status": &lt;string: project's sync status&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#commit-GET" aria-expanded="false" aria-controls="commit-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="commits"></a>
+<div class="api-section white-well">
+  <h1 id="commits" style="margin-bottom:30px">Commits</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/projects/:project/commits</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/projects/:project/commits</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of commits for a WakaTime project showing the time spent coding in each commit.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>author</code> - <code>String</code> - optional - Filter commits to only those authored by the given username.</p>
+      
+        <p><code>branch</code> - <code>String</code> - optional - Filter commits to a branch; defaults to the repo’s default branch name.</p>
+      
+        <p><code>page</code> - <code>Integer</code> - optional - Page number of commits.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="commits-GET" aria-expanded="false">
+      <pre><code>{
+  "commits": [
+    {
+      "author_avatar_url": &lt;string: url of author's avatar image&gt;
+      "author_date": &lt;string: time when commit was authored in ISO 8601 format&gt;,
+      "author_email": &lt;string: email address of author&gt;,
+      "author_html_url": &lt;string: link to author's profile on GitHub, Bitbucket, GitLab, etc&gt;,
+      "author_name": &lt;string: name of author&gt;,
+      "author_url": &lt;string: api url for author's profile&gt;,
+      "author_username": &lt;string: author's username&gt;,
+      "branch": &lt;string: branch name, for ex: master&gt;,
+      "committer_avatar_url": &lt;string: url of committer's avatar image&gt;,
+      "committer_date": &lt;string: commit time in ISO 8601 format&gt;,
+      "committer_email": &lt;string: email address of committer&gt;,
+      "committer_html_url": &lt;string: link to committer's profile on GitHub, Bitbucket, GitLab, etc&gt;,
+      "committer_name": &lt;string: name of committer&gt;,
+      "committer_url": &lt;string: api url for committer's profile&gt;,
+      "committer_username": &lt;string: committer's username&gt;,
+      "created_at": &lt;string: time commit was synced in ISO 8601 format&gt;,
+      "hash": &lt;string: revision control hash of this commit&gt;,
+      "html_url": &lt;string: link to an html page with details about current commit&gt;,
+      "human_readable_total": &lt;string: time coded in editor for this commit&gt;,
+      "human_readable_total_with_seconds": &lt;string: time coded in editor for this commit&gt;,
+      "id": &lt;string: unique id of commit&gt;,
+      "message": &lt;string: author's description of this commit&gt;,
+      "ref": &lt;string: refs/heads/master&gt;,
+      "total_seconds": &lt;float: time coded in editor for this commit&gt;,
+      "truncated_hash": &lt;string: truncated revision control hash of this commit&gt;,
+      "url": &lt;string: api url with details about current commit&gt;,
+    }, …
+  ],
+  "author": &lt;string: current author or null if showing commits from all authors&gt;,
+  "next_page": &lt;integer: next page number or null if last page&gt;
+  "next_page_url": &lt;string: url for next page or null if last page&gt;
+  "page": &lt;integer: current page number&gt;
+  "prev_page": &lt;integer: previous page number or null if first page&gt;
+  "prev_page_url": &lt;string: url for previous page or null if first page&gt;
+  "branch": &lt;string: branch name containting the commits&gt;,
+  "project": {
+    "id": &lt;string: unique id of project&gt;,
+    "name": &lt;string: project name&gt;,
+    "privacy": &lt;string: project privacy setting&gt;,
+    "repository": {
+      "default_branch": &lt;string: default branch if given for this repo&gt;,
+      "description": &lt;string: remote repository description&gt;,
+      "fork_count": &lt;integer: number of repo forks if available&gt;
+      "full_name": &lt;string: username and repo name, ex: wakatime/wakadump&gt;,
+      "homepage": &lt;string: homepage of repository&gt;,
+      "html_url": &lt;string: html url for repository&gt;,
+      "id": &lt;string: unique id of repository&gt;,
+      "is_fork": &lt;boolean: whether this repo is a fork or original&gt;,
+      "is_private": &lt;boolean: whether this repo is private or public&gt;,
+      "last_synced_at": &lt;string: last time this repo was synced with remote provider iSO 8601 format&gt;,
+      "name": &lt;string: repository name&gt;,
+      "provider": &lt;string: remote provider of repository, ex: github&gt;,
+      "star_count": &lt;integer: number of repo stars if available&gt;
+      "url": &lt;string: api url of remote repository&gt;,
+      "watch_count": &lt;integer: number of watchers of repo if available&gt;,
+    }
+  },
+  "status": &lt;string: project's sync status&gt;,
+  "total": &lt;integer: number of commits available&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#commits-GET" aria-expanded="false" aria-controls="commits-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="custom_rules"></a>
+<div class="api-section white-well">
+  <h1 id="custom_rules" style="margin-bottom:30px">Custom Rules</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/custom_rules</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/custom_rules</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of <a href="/settings/rules">custom rules</a> for this user.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="custom_rules-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique id of this custom rule&gt;,
+      "action": &lt;string: either "change" or "delete"&gt;,
+      "source": &lt;string: the heartbeat property to match against source_value&gt;,
+      "operation": &lt;string: one of "equals", "contains", "starts with", or "ends with"&gt;,
+      "source_value": &lt;string: the match string&gt;,
+      "destination": &lt;string: the heartbeat property to replace with destination_value&gt;,
+      "destination_value": &lt;string: the replacement string&gt;,
+      "created_at": &lt;string: time when this custom rule was created in ISO 8601 format&gt;,
+      "modified_at": &lt;string: time when this custom rule was last modified in ISO 8601 format&gt;,
+      "priority": &lt;integer: a unique number determining the order this rule is executed on heartbeats; starts with 1; lower priorities are executed before higher priorities&gt;,
+    }, …
+  ],
+  "job_id": &lt;string: optional id representing the custom rule progress, if being applied to past code stats; can be used to check the job progress&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#custom_rules-GET" aria-expanded="false" aria-controls="custom_rules-GET"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/:user/custom_rules/:rule_id</code></strong></p>
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/current/custom_rules/:rule_id</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Deletes a single <a href="/settings/rules">custom rule</a>. Does not trigger applying custom rules to past code stats, and doesn’t abort any current job if already running.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="custom_rules-DELETE" aria-expanded="false">
+      <pre><code>{
+  "data": {}
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#custom_rules-DELETE" aria-expanded="false" aria-controls="custom_rules-DELETE"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>PUT</code> <code>/api/v1/users/:user/custom_rules</code></strong></p>
+    
+      <p><strong><code>PUT</code> <code>/api/v1/users/current/custom_rules</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Updates a user’s custom rules. Accepts an array of rules to replace/update the user’s existing rules.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>[
+  {
+    "id": &lt;string: optional id of an existing custom rule&gt;,
+    "action": &lt;string: either "change" or "delete"&gt;,
+    "source": &lt;string: the heartbeat property to match against source_value&gt;,
+    "operation": &lt;string: one of "equals", "contains", "starts with", or "ends with"&gt;,
+    "source_value": &lt;string: the match string&gt;,
+    "destination": &lt;string: the heartbeat property to replace with destination_value&gt;,
+    "destination_value": &lt;string: the replacement string&gt;,
+    "priority": &lt;integer: a unique number determining the order this rule is executed on heartbeats; starts with 1; lower priorities are executed before higher priorities&gt;,
+  }, …
+]
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="custom_rules-PUT" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "changes": {
+      "added": [],
+      "removed": [],
+      "rearranged": [],
+    },
+    "job_id": &lt;string: unique id representing the background job applying all current custom rules to user’s past code stats; can be used to check the job’s progress&gt;,
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#custom_rules-PUT" aria-expanded="false" aria-controls="custom_rules-PUT"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="custom_rules_progress"></a>
+<div class="api-section white-well">
+  <h1 id="custom_rules_progress" style="margin-bottom:30px">Custom Rules Progress</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/custom_rules_progress</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/custom_rules_progress</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>The background progress if currently applying <a href="/settings/rules">custom rules</a> to this user’s past code stats.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>job_id</code> - <code>String</code> - required - The job_id to check.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="custom_rules_progress-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "progress": &lt;integer: a number between 0 and 100&gt;,
+    "job_id": &lt;string: id of the custom rule progress job&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#custom_rules_progress-GET" aria-expanded="false" aria-controls="custom_rules_progress-GET"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/:user/custom_rules_progress</code></strong></p>
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/current/custom_rules_progress</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Aborts applying current custom rules to user’s past code stats. Custom rules will still be applied to any new incoming heartbeats.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="custom_rules_progress-DELETE" aria-expanded="false">
+      <pre><code>{
+  "data": {}
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#custom_rules_progress-DELETE" aria-expanded="false" aria-controls="custom_rules_progress-DELETE"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="data_dumps"></a>
+<div class="api-section white-well">
+  <h1 id="data_dumps" style="margin-bottom:30px">Data Dumps</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/data_dumps</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/data_dumps</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List data exports for the user. A data export can also be created at https://wakatime.com/settings, and contains all the user’s code stats as daily Summaries in JSON format since the user’s account was created.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="data_dumps-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique id of this data export&gt;,
+      "status": &lt;string: one of 'Pending…', 'Processing coding activity…', 'Uploading…', or 'Completed'&gt;,
+      "percent_complete": &lt;float: percent of code stats that have been exported&gt;,
+      "download_url": &lt;string: when completed, the url to download this data export&gt;,
+      "type": &lt;string: either 'heartbeats' or 'daily'&gt;,
+      "is_processing": &lt;boolean: whether this data export is currently processing in the background&gt;,
+      "is_stuck": &lt;boolean: whether this data export is taking too long, probably due to an error&gt;,
+      "has_failed": &lt;boolean: whether this data export failed to complete due to an error&gt;,
+      "expires": &lt;string: datetime when this data export can no longer be downloaded&gt;,
+      "created_at": &lt;string: datetime when this data export was requested&gt;,
+    }, …
+  ],
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#data_dumps-GET" aria-expanded="false" aria-controls="data_dumps-GET"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/:user/data_dumps</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/current/data_dumps</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Start generating a data export in the background. When finished, the percent complete will be 100 and the status 'Completed', with a 'download_url' available for downloading. An email will also be sent to the user with the download url when exporting completed.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>{
+  "type": &lt;string: Required export type; Either 'daily' or 'heartbeats'&gt;,
+  "email_when_finished": &lt;boolean: Optional flag to disable the email notification when exporting completed; defaults to true&gt;,
+}
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>201</code></p>
+
+    <div class="collapse" id="data_dumps-POST" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of this data export&gt;,
+    "status": &lt;string: one of 'Pending…', 'Processing coding activity…', 'Uploading…', or 'Completed'&gt;,
+    "percent_complete": &lt;float: percent of code stats that have been exported&gt;,
+    "download_url": &lt;string: when completed, the url to download this data export&gt;,
+    "type": &lt;string: either 'heartbeats' or 'daily'&gt;,
+    "is_processing": &lt;boolean: whether this data export is currently processing in the background&gt;,
+    "is_stuck": &lt;boolean: whether this data export is taking too long, probably due to an error&gt;,
+    "has_failed": &lt;boolean: whether this data export failed to complete due to an error&gt;,
+    "expires": &lt;string: datetime when this data export can no longer be downloaded&gt;,
+    "created_at": &lt;string: datetime when this data export was requested&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#data_dumps-POST" aria-expanded="false" aria-controls="data_dumps-POST"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="durations"></a>
+<div class="api-section white-well">
+  <h1 id="durations" style="margin-bottom:30px">Durations</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/durations</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/durations</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A user's coding activity for the given day as an array of durations. Durations are read-only representations of <a href="#heartbeats">Heartbeats</a>, created by joining multiple Heartbeats together when they’re within 15 minutes of each other. The 15 minutes default can be changed with your account’s Keystroke Timeout preference.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>date</code> - <code>Date</code> - required - Requested day; Durations will be returned from 12am until 11:59pm in user&#39;s timezone for this day.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show durations for this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show durations for these branches; comma separated list of branch names.</p>
+      
+        <p><code>timeout</code> - <code>Integer</code> - optional - The keystroke timeout preference used when joining heartbeats into durations. Defaults the the user&#39;s keystroke timeout value. See the FAQ for more info.</p>
+      
+        <p><code>writes_only</code> - <code>Boolean</code> - optional - The writes_only preference. Defaults to the user&#39;s writes_only setting.</p>
+      
+        <p><code>timezone</code> - <code>String</code> - optional - The timezone for given date. Defaults to the user&#39;s timezone.</p>
+      
+        <p><code>slice_by</code> - <code>String</code> - optional - Optional primary key to use when slicing durations. Defaults to “project”. Can be “project”, “entity”, “language”, “dependencies”, “os”, “editor”, “category”, or “machine”.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="durations-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "project": &lt;string: project name&gt;,
+      "time": &lt;float: start of this duration as UNIX epoch; numbers after decimal point are fractions of a second&gt;,
+      "duration": &lt;float: length of time of this duration in seconds&gt;
+    }, …
+  ],
+  "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+  "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+  "timezone": &lt;string: timezone used for this request in Olson Country/Region format&gt;
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#durations-GET" aria-expanded="false" aria-controls="durations-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="editors"></a>
+<div class="api-section white-well">
+  <h1 id="editors" style="margin-bottom:30px">Editors</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/editors</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of WakaTime IDE plugins, latest plugin versions, and their color used on WakaTime charts.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>unreleased</code> - <code>Boolean</code> - optional - Include unreleased plugins.</p>
+      
+    
+
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="editors-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of this editor plugin&gt;,
+    "name": &lt;string: display name of the editor&gt;,
+    "color": &lt;string: hex color code used when displaying the editor on charts&gt;,
+    "website": &lt;string: official website of the editor&gt;,
+    "repository": &lt;string: github repository for the editor’s plugin&gt;,
+    "version": &lt;string: most recent plugin version available for this editor&gt;,
+    "version_url": &lt;string: remote file containing this editor’s most recent version&gt;,
+    "history_url": &lt;string: changelog file&gt;,
+    "released": &lt;boolean: whether this IDE has a WakaTime plugin available&gt;,
+    "hidden": &lt;boolean: whether this IDE has been deprecated or archived, ex: Atom&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#editors-GET" aria-expanded="false" aria-controls="editors-GET"> </a>
+
+    <p style="padding-left:20px;"><a href="/api/v1/editors">Try it out</a></p>
+
+    
+
+  
+
+</div>
+        
+          <a name="external_durations"></a>
+<div class="api-section white-well">
+  <h1 id="external_durations" style="margin-bottom:30px">External Durations</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/external_durations</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/external_durations</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A user's external durations for the given day. External durations aren’t created by IDE plugins. They’re created from external apps, such as the Google Calendar integration. They should be reproducible from the external integration. External durations for an integration are deleted when the user disconnects the integration from their WakaTime account.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>date</code> - <code>Date</code> - required - Requested day; Durations will be returned from 12am until 11:59pm in user&#39;s timezone for this day.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show durations for this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show durations for these branches; comma separated list of branch names.</p>
+      
+        <p><code>timezone</code> - <code>String</code> - optional - The timezone for given date. Defaults to the user&#39;s timezone.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="external_durations-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique id of this external duration&gt;,
+      "external_id": &lt;string: unique identifier for this duration on the external provider&gt;,
+      "entity": &lt;string: entity duration is logging time against, such as an absolute file path or domain; for Google Calendar events, this will be the event title&gt;,
+      "type": &lt;string: type of entity; can be file, app, or domain&gt;,
+      "provider": &lt;string: external app which created this activity&gt;,
+      "category": &lt;string: category for this activity; can be coding, building, indexing, debugging, browsing, running tests, writing tests, manual testing, writing docs, communicating, code reviewing, researching, learning, or designing&gt;,
+      "start_time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+      "end_time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+      "project": &lt;string: project name&gt;,
+      "branch": &lt;string: branch name&gt;,
+      "language": &lt;string: language name&gt;,
+      "meta": &lt;string: a metadata string value; for Google Calendar events, this will be the event description&gt;,
+    }, …
+  ],
+  "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+  "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+  "timezone": &lt;string: timezone used for this request in Olson Country/Region format&gt;
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#external_durations-GET" aria-expanded="false" aria-controls="external_durations-GET"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/:user/external_durations</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/current/external_durations</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/:user/external_durations.bulk</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/current/external_durations.bulk</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Creates a duration representing activity for a user with start and end time, when Heartbeat pings aren’t available. For ex: meetings. External durations are not created by IDE plugins, only OAuth apps can create external durations. External durations must be created within one year from Today, and must not start before the associated user’s account was created. Use external_id to prevent creating duplicate durations. Using the same external_id will update any existing duration with the provided attributes. The bulk endpoint accepts an array of external durations, limited to 1,000 per POST request. The bulk endpoint will return 201 response status code with an array of status_codes for each duration sent. That’s because most invalid durations can be ommitted without problems while still allowing your app’s valid durations.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>{
+  "external_id": &lt;string: unique identifier for this duration on the external provider&gt;,
+  "entity": &lt;string: entity which this duration is logging time towards, such as an absolute file path or a domain&gt;,
+  "type": &lt;string: type of entity; can be file, app, or domain&gt;,
+  "category": &lt;string: category for this activity (optional); normally this is inferred automatically from type; can be coding, building, indexing, debugging, browsing, running tests, writing tests, manual testing, writing docs, communicating, code reviewing, researching, learning, or designing&gt;,
+  "start_time": &lt;float: UNIX epoch timestamp when the activity started; numbers after decimal point are fractions of a second&gt;,
+  "end_time": &lt;float: UNIX epoch timestamp when the activity ended; numbers after decimal point are fractions of a second&gt;,
+  "project": &lt;string: project name (optional)&gt;,
+  "branch": &lt;string: branch name (optional)&gt;,
+  "language": &lt;string: language name (optional)&gt;,
+  "meta": &lt;string: A metadata string value with max length 2083. Only used by custom rules for equals, contains, starts with, ends with matching. Can be any string value you want. (optional)&gt;,
+}
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>201</code></p>
+
+    <div class="collapse" id="external_durations-POST" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of this external duration&gt;,
+    "external_id": &lt;string: unique identifier for this duration on the external provider&gt;,
+    "entity": &lt;string: entity duration is logging time against, such as an absolute file path or domain; for Google Calendar events, this will be the event title&gt;,
+    "type": &lt;string: type of entity; can be file, app, or domain&gt;,
+    "provider": &lt;string: external app which created this activity&gt;,
+    "category": &lt;string: category for this activity; can be coding, building, indexing, debugging, browsing, running tests, writing tests, manual testing, writing docs, communicating, code reviewing, researching, learning, or designing&gt;,
+    "start_time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+    "end_time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+    "project": &lt;string: project name (optional)&gt;,
+    "branch": &lt;string: branch name (optional)&gt;,
+    "language": &lt;string: language name (optional)&gt;,
+    "meta": &lt;string: optional metadata string value; for Google Calendar events, this will be the event description&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#external_durations-POST" aria-expanded="false" aria-controls="external_durations-POST"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/:user/external_durations.bulk</code></strong></p>
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/current/external_durations.bulk</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Permanently deletes ExternalDurations, removing the deleted stats from all dashboards.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>{
+  "date": &lt;string: A date in format YYYY-MM-DD. ExternalDurations will only be deleted for the given date from 12am until 11:59pm in user's timezone&gt;,
+  "ids": &lt;list: A list of string ExternalDuration IDs to delete.&gt;,
+}
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="external_durations-DELETE" aria-expanded="false">
+      <pre><code>{
+  "data": {}
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#external_durations-DELETE" aria-expanded="false" aria-controls="external_durations-DELETE"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="goal"></a>
+<div class="api-section white-well">
+  <h1 id="goal" style="margin-bottom:30px">Goal</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/goals/:goal</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/goals/:goal</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A single goal. This endpoint is only backed by cached data, similar to the <a href="#status_bar">Status Bar</a> endpoint. If there’s no data yet in the cache, an empty Goal is returned while the cache updates in the background:<br><code>{"data":{"chart_data":[]}}</code>.<br>Notice the keys present in the empty response are the only ones necessary for the <code>wakatime-cli --today-goal</code> command.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_goals</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="goal-GET" aria-expanded="false">
+      <pre><code>{
+  "cached_at": &lt;string: when this response was calculated and cached as ISO 8601 UTC datetime&gt;,
+  "data": {
+    "average_status": &lt;string: "fail" when there are more failure days or weeks than success, otherwise "success"&gt;,
+    "chart_data": [
+      {
+        "actual_seconds": &lt;float: number of seconds coded during this delta period&gt;,
+        "actual_seconds_text": &lt;string: human readable time coded during this delta period&gt;,
+        "goal_seconds": &lt;integer: number of seconds required to meet goal for this delta period&gt;,
+        "goal_seconds_text": &lt;string: human readable coding time required to meet goal for this delta period&gt;,
+        "range": {
+          "date": &lt;string: current time range as Date string in YEAR-MONTH-DAY format (only available when delta is "day")&gt;,
+          "end": &lt;string: end of current time range as ISO 8601 UTC datetime&gt;,
+          "start": &lt;string: start of current time range as ISO 8601 UTC datetime&gt;,
+          "text": &lt;string: current range in human-readable format relative to the current day&gt;,
+          "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+        },
+        "range_status": &lt;string: either "success", "fail", "pending", or "ignored"&gt;
+        "range_status_reason": &lt;string: an explanation for why this delta period passed or failed&gt;
+      }, …
+    ],
+    "created_at": &lt;string: time when this goal was created in ISO 8601 format&gt;,
+    "cumulative_status": &lt;string: status over all delta periods, either "success", "fail", or "ignored"&gt;,
+    "custom_title": &lt;string: user defined custom title for this goal, overwrites goal title if defined&gt;,
+    "delta": &lt;string: goal step duration; either "day" or "week"&gt;,
+    "editors": &lt;list of strings: editors for this goal&gt;,
+    "id": &lt;string: unique id of goal&gt;,
+    "ignore_days": &lt;list of strings: goal status set to "ignored" instead of "failed" for these weekdsays, when delta is "day"&gt;,
+    "ignore_zero_days": &lt;boolean: ignore days with no coding activity&gt;,
+    "improve_by_percent": &lt;float: percent goal should increase each delta&gt;,
+    "is_current_user_owner": &lt;boolean: whether the currently authenticated user is the owner of this goal&gt;,
+    "is_enabled": &lt;boolean: whether this goal is enabled or disabled&gt;,
+    "is_inverse": &lt;boolean: when true, the goal is to code less not more&gt;,
+    "is_snoozed": &lt;boolean: goal email notifications are temporarily disabled until the date defined by snooze_until&gt;,
+    "is_tweeting": &lt;boolean: this goal is setup to tweet progress each day&gt;,
+    "languages": &lt;list of strings: languages for this goal&gt;,
+    "modified_at": &lt;string: optional time when this goal was last changed in ISO 8601 format&gt;,
+    "owner": {
+      "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+      "email": &lt;string: email address&gt;,
+      "full_name": &lt;string: full name of user&gt;,
+      "id": &lt;string: unique id of user&gt;,
+      "photo": &lt;string: url of photo for this user&gt;,
+      "username": &lt;string: user's public username&gt;,
+    },
+    "projects": &lt;list of strings: projects for this goal&gt;,
+    "range_text": &lt;string: complete range of this goal for all delta periods in human-readable format&gt;,
+    "seconds": &lt;integer: goal amount&gt;,
+    "shared_with": [
+      {
+        "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+        "email": &lt;string: user's email, only defined if shared via email address&gt;,
+        "full_name": &lt;string: full name of user&gt;,
+        "id": &lt;string: unique id of user&gt;,
+        "photo": &lt;string: url of photo for this user&gt;,
+        "status": &lt;string: whether this invitation has been accepted or not by the other user&gt;,
+        "user_id": &lt;string: user's id, only defined if shared via user id&gt;,
+        "username": &lt;string: username, only defined if shared via username&gt;,
+      }, …
+    ],
+    "snooze_until": &lt;string: optional time when goal email notifications will be re-enabled, in ISO 8601 format&gt;,
+    "status": &lt;string: most recent day or week range status; can be "success", "fail", "ignored", or "pending"&gt;,
+    "status_percent_calculated": &lt;integer: for goals which are pre-calculated in the background, the percent completed until this goal's status will be available&gt;,
+    "subscribers": [
+      {
+        "email": &lt;string: email address of this subscriber, if public&gt;,
+        "email_frequency": &lt;string: how often this subscriber receives emails about this goal&gt;,
+        "full_name": &lt;string: name of this subscriber, if public&gt;,
+        "user_id": &lt;string: unique id of this subscriber&gt;,
+        "username": &lt;string: username of this subscriber, if defined&gt;
+      }, …
+    ],
+    "title": &lt;string: human readable title for this goal&gt;,
+    "type": &lt;string: type of goal&gt;
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#goal-GET" aria-expanded="false" aria-controls="goal-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="goals"></a>
+<div class="api-section white-well">
+  <h1 id="goals" style="margin-bottom:30px">Goals</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/goals</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/goals</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List a user’s goals.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_goals</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="goals-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "average_status": &lt;string: "fail" when there are more failure days or weeks than success, otherwise "success"&gt;,
+      "chart_data": [
+        {
+          "actual_seconds": &lt;float: number of seconds coded during this delta period&gt;,
+          "actual_seconds_text": &lt;string: human readable time coded during this delta period&gt;,
+          "goal_seconds": &lt;integer: number of seconds required to meet goal for this delta period&gt;,
+          "goal_seconds_text": &lt;string: human readable coding time required to meet goal for this delta period&gt;,
+          "range": {
+            "date": &lt;string: current time range as Date string in YEAR-MONTH-DAY format (only available when delta is "day")&gt;,
+            "end": &lt;string: end of current time range as ISO 8601 UTC datetime&gt;,
+            "start": &lt;string: start of current time range as ISO 8601 UTC datetime&gt;,
+            "text": &lt;string: current range in human-readable format relative to the current day&gt;,
+            "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+          },
+          "range_status": &lt;string: either "success", "fail", "pending", or "ignored"&gt;
+          "range_status_reason": &lt;string: an explanation for why this delta period passed or failed&gt;
+        }, …
+      ],
+      "created_at": &lt;string: time when this goal was created in ISO 8601 format&gt;,
+      "cumulative_status": &lt;string: status over all delta periods, either "success", "fail", or "ignored"&gt;,
+      "custom_title": &lt;string: user defined custom title for this goal, overwrites goal title if defined&gt;,
+      "delta": &lt;string: goal step duration; either "day" or "week"&gt;,
+      "editors": &lt;list of strings: editors for this goal&gt;,
+      "id": &lt;string: unique id of goal&gt;,
+      "ignore_days": &lt;list of strings: goal status set to "ignored" instead of "failed" for these weekdsays, when delta is "day"&gt;,
+      "ignore_zero_days": &lt;boolean: ignore days with no coding activity&gt;,
+      "improve_by_percent": &lt;float: percent goal should increase each delta&gt;,
+      "is_current_user_owner": &lt;boolean: whether the currently authenticated user is the owner of this goal&gt;,
+      "is_enabled": &lt;boolean: whether this goal is enabled or disabled&gt;,
+      "is_inverse": &lt;boolean: when true, the goal is to code less not more&gt;,
+      "is_snoozed": &lt;boolean: goal email notifications are temporarily disabled until the date defined by snooze_until&gt;,
+      "is_tweeting": &lt;boolean: this goal is setup to tweet progress each day&gt;,
+      "languages": &lt;list of strings: languages for this goal&gt;,
+      "modified_at": &lt;string: optional time when this goal was last changed in ISO 8601 format&gt;,
+      "owner": {
+        "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+        "email": &lt;string: email address&gt;,
+        "full_name": &lt;string: full name of user&gt;,
+        "id": &lt;string: unique id of user&gt;,
+        "photo": &lt;string: url of photo for this user&gt;,
+        "username": &lt;string: user's public username&gt;,
+      },
+      "projects": &lt;list of strings: projects for this goal&gt;,
+      "range_text": &lt;string: complete range of this goal for all delta periods in human-readable format&gt;,
+      "seconds": &lt;integer: goal amount&gt;,
+      "shared_with": [
+        {
+          "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+          "email": &lt;string: user's email, only defined if shared via email address&gt;,
+          "full_name": &lt;string: full name of user&gt;,
+          "id": &lt;string: unique id of user&gt;,
+          "photo": &lt;string: url of photo for this user&gt;,
+          "status": &lt;string: whether this invitation has been accepted or not by the other user&gt;,
+          "user_id": &lt;string: user's id, only defined if shared via user id&gt;,
+          "username": &lt;string: username, only defined if shared via username&gt;,
+        }, …
+      ],
+      "snooze_until": &lt;string: optional time when goal email notifications will be re-enabled, in ISO 8601 format&gt;,
+      "status": &lt;string: most recent day or week range status; can be "success", "fail", "ignored", or "pending"&gt;,
+      "status_percent_calculated": &lt;integer: for goals which are pre-calculated in the background, the percent completed until this goal's status will be available&gt;,
+      "subscribers": [
+        {
+          "email": &lt;string: email address of this subscriber, if public&gt;,
+          "email_frequency": &lt;string: how often this subscriber receives emails about this goal&gt;,
+          "full_name": &lt;string: name of this subscriber, if public&gt;,
+          "user_id": &lt;string: unique id of this subscriber&gt;,
+          "username": &lt;string: username of this subscriber, if defined&gt;
+        }, …
+      ],
+      "title": &lt;string: human readable title for this goal&gt;,
+      "type": &lt;string: type of goal&gt;
+    }, …
+  ],
+  "total": &lt;integer: number of goals&gt;,
+  "total_pages": &lt;integer: number of pages&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#goals-GET" aria-expanded="false" aria-controls="goals-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="heartbeats"></a>
+<div class="api-section white-well">
+  <h1 id="heartbeats" style="margin-bottom:30px">Heartbeats</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/heartbeats</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/heartbeats</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A user's heartbeats sent from plugins for the given day as an array.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>date</code> - <code>Date</code> - required - Requested day; Heartbeats will be returned from 12am until 11:59pm in user&#39;s timezone for this day.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_heartbeats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="heartbeats-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "entity": &lt;string: entity heartbeat is logging time against, such as an absolute file path or domain&gt;,
+      "type": &lt;string: type of entity; can be file, app, or domain&gt;,
+      "category": &lt;string: category for this activity; can be coding, building, indexing, debugging, browsing, running tests, writing tests, manual testing, writing docs, code reviewing, communicating, researching, learning, or designing&gt;,
+      "time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+      "project": &lt;string: project name (optional)&gt;,
+      "project_root_count": &lt;integer: count of the number of folders in the project root path&gt;,
+      "branch": &lt;string: branch name (optional)&gt;,
+      "language": &lt;string: language name (optional)&gt;,
+      "dependencies": &lt;string: optional comma separated list of dependencies detected from entity file (optional)&gt;,
+      "machine_name_id": &lt;string: unique id of the machine which generated this coding activity&gt;,
+      "line_additions": &lt;integer: number of lines added since last heartbeat in the current file (optional)&gt;,
+      "line_deletions": &lt;integer: number of lines removed since last heartbeat in the current file (optional)&gt;,
+      "lines": &lt;integer: total number of lines in the entity (when entity type is file)&gt;,
+      "lineno": &lt;integer: current line row number of cursor (optional)&gt;,
+      "cursorpos": &lt;integer: current cursor column position (optional)&gt;,
+      "is_write": &lt;boolean: whether this heartbeat was triggered from writing to a file&gt;,
+    }, …
+  ],
+  "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+  "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+  "timezone": &lt;string: timezone used for this request in Olson Country/Region format&gt;
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#heartbeats-GET" aria-expanded="false" aria-controls="heartbeats-GET"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/:user/heartbeats</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/current/heartbeats</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/:user/heartbeats.bulk</code></strong></p>
+    
+      <p><strong><code>POST</code> <code>/api/v1/users/current/heartbeats.bulk</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Creates a heartbeat representing activity for a user. The bulk endpoint accepts an array of heartbeats, limited to 25 per POST request. Editor and OS are detected from the User-Agent header. Normally you don’t need this endpoint and should use <a href="https://wakatime.com/help/creating-plugin#sending-file-to-wakatime-cli">wakatime-cli</a> to send heartbeats.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>{
+  "entity": &lt;string: entity heartbeat is logging time against, such as an absolute file path or domain&gt;,
+  "type": &lt;string: type of entity; can be file, app, or domain&gt;,
+  "category": &lt;string: category for this activity (optional); normally this is inferred automatically from type; can be coding, building, indexing, debugging, browsing, running tests, writing tests, manual testing, writing docs, communicating, code reviewing, researching, learning, or designing&gt;,
+  "time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+  "project": &lt;string: project name (optional)&gt;,
+  "project_root_count": &lt;integer: count of the number of folders in the project root path (optional); for ex: if the project folder is /Users/user/projects/wakatime and the entity path is /Users/user/projects/wakatime/models/user.py then the project_root_count is 5 and the relative entity path after removing 5 prefix folders is models/user.py&gt;,
+  "branch": &lt;string: branch name (optional)&gt;,
+  "language": &lt;string: language name (optional)&gt;,
+  "dependencies": &lt;string: comma separated list of dependencies detected from entity file (optional)&gt;,
+  "lines": &lt;integer: total number of lines in the entity (when entity type is file)&gt;,
+  "line_additions": &lt;integer: number of lines added since last heartbeat in the current file (optional)&gt;,
+  "line_deletions": &lt;integer: number of lines removed since last heartbeat in the current file (optional)&gt;,
+  "lineno": &lt;integer: current line row number of cursor with the first line starting at 1 (optional)&gt;,
+  "cursorpos": &lt;integer: current cursor column position starting from 1 (optional)&gt;,
+  "is_write": &lt;boolean: whether this heartbeat was triggered from writing to a file (optional)&gt;,
+}
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>202</code></p>
+
+    <div class="collapse" id="heartbeats-POST" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of newly created heartbeat&gt;,
+    "entity": &lt;string: entity heartbeat is logging time against, such as an absolute file path or domain&gt;,
+    "type": &lt;string: type of entity; can be file, app, or domain&gt;,
+    "time": &lt;float: UNIX epoch timestamp; numbers after decimal point are fractions of a second&gt;,
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#heartbeats-POST" aria-expanded="false" aria-controls="heartbeats-POST"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/:user/heartbeats.bulk</code></strong></p>
+    
+      <p><strong><code>DELETE</code> <code>/api/v1/users/current/heartbeats.bulk</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Permanently deletes heartbeats, removing the deleted code stats from all dashboards. Used by the <a href="https://wakatime.com/settings/code-delete-tool">Code Delete Tool</a>.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_heartbeats</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>{
+  "date": &lt;string: A date in format YYYY-MM-DD. Heartbeats will only be deleted for the given date from 12am until 11:59pm in user's timezone&gt;,
+  "ids": &lt;list: A list of string Heartbeat IDs to delete.&gt;,
+}
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="heartbeats-DELETE" aria-expanded="false">
+      <pre><code>{
+  "data": {}
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#heartbeats-DELETE" aria-expanded="false" aria-controls="heartbeats-DELETE"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="insights"></a>
+<div class="api-section white-well">
+  <h1 id="insights" style="margin-bottom:30px">Insights</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/insights/:insight_type/:range</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/insights/:insight_type/:range</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>An insight about the user’s coding activity for the given time range. <code>insight_type</code> can be one of <code>weekday</code>, <code>days</code>, <code>best_day</code>, <code>daily_average</code>, <code>projects</code>, <code>languages</code>, <code>editors</code>, <code>categories</code>, <code>machines</code>, or <code>operating_systems</code>. <code>range</code> can be a <code>YYYY</code> year, <code>YYYY-MM</code> month or one of <code>last_7_days</code>, <code>last_30_days</code>, <code>last_6_months</code>, <code>last_year</code>, or <code>all_time</code>. For accounts subscribed to the free plan, time ranges &gt;= one year are updated on the first request. It’s best to always check <code>is_up_to_date</code> and retry your request when the response is stale.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>timeout</code> - <code>Integer</code> - optional - The keystroke timeout value used to calculate these stats. Defaults the the user&#39;s keystroke timeout value.</p>
+      
+        <p><code>writes_only</code> - <code>Boolean</code> - optional - The writes_only value used to calculate these stats. Defaults to the user&#39;s writes_only setting.</p>
+      
+        <p><code>weekday</code> - <code>Integer</code> - optional - Filter days to only the given weekday. Only works with days insight. Can be an integer 0-6 or corresponding string monday-sunday.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_summaries</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="insights-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "&lt;insight_type&gt;": &lt;object or array: data for this insight type over the given time range&gt;,
+    "range": &lt;string: time range of these stats&gt;,
+    "human_readable_range": &lt;string: time range as human readable string&gt;,
+    "status": &lt;string: status of these stats in the cache&gt;,
+    "is_including_today": &lt;boolean: true if these stats include the current day; normally false except range "all_time"&gt;,
+    "is_up_to_date": &lt;boolean: true if these stats are up to date; when false, stats are missing or from an old time range and will be refreshed soon&gt;,
+    "percent_calculated": &lt;integer: percent these stats have finished updating in the background&gt;,
+    "start": &lt;string: start of this time range as ISO 8601 UTC datetime&gt;,
+    "end": &lt;string: end of this time range as ISO 8601 UTC datetime&gt;,
+    "timezone": &lt;string: timezone used in Olson Country/Region format&gt;,
+    "timeout": &lt;integer: value of the user's keystroke timeout setting in minutes&gt;,
+    "writes_only": &lt;boolean: status of the user's writes_only setting&gt;,
+    "user_id": &lt;string: unique id of this user&gt;,
+    "created_at": &lt;string: time when these stats were created in ISO 8601 format&gt;,
+    "modified_at": &lt;string: time when these stats were last updated in ISO 8601 format&gt;
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#insights-GET" aria-expanded="false" aria-controls="insights-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="leaders"></a>
+<div class="api-section white-well">
+  <h1 id="leaders" style="margin-bottom:30px">Leaders</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/leaders</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of users ranked by coding activity in descending order. Same as the <a href="/leaders">public leaderboards</a>. The public leaderboard updates at least once every 12 hours, and usually more frequently.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>language</code> - <code>String</code> - optional - Filter leaders by a specific language.</p>
+      
+        <p><code>is_hireable</code> - <code>Boolean</code> - optional - Filter leaders by the hireable badge.</p>
+      
+        <p><code>country_code</code> - <code>String</code> - optional - Filter leaders by two-character country code.</p>
+      
+        <p><code>page</code> - <code>Integer</code> - optional - Page number of leaderboard. If authenticated, defaults to the page containing the currently authenticated user.</p>
+      
+    
+
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="leaders-GET" aria-expanded="false">
+      <pre><code>{
+  "current_user": {
+    "rank": &lt;integer: rank of the currently authorized user, or null if the current user is not on this leader board&gt;,
+    "page": &lt;integer: page containing the currently authorized user, or null if the current user is not on this leader board&gt;,
+    "user": {
+      "id": &lt;string: unique id of user&gt;,
+      "email": &lt;string: email address of user, if public&gt;,
+      "username": &lt;string: users public username&gt;,
+      "full_name": &lt;string: full name of user&gt;,
+      "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+      "website": &lt;string: website of user&gt;,
+      "human_readable_website": &lt;string: website of user without url scheme&gt;,
+      "is_hireable": &lt;boolean: represents the “hireable” badge on user profiles&gt;,
+      "city": {
+        "country_code": &lt;string: two letter code, for ex: US or UK&gt;,
+        "name": &lt;string: city name, for ex: San Francisco&gt;,
+        "state": &lt;string: state name, for ex: California&gt;,
+        "title": &lt;string: city, state (or country if state has same name as city)&gt;
+      },
+      "is_email_public": &lt;boolean: whether this user's email should be shown publicly on leader boards&gt;,
+      "photo_public": &lt;boolean: whether this user's photo should be shown publicly on leader boards&gt;,
+    },
+  },
+  "data": [
+    {
+      "rank": &lt;integer: rank of this leader&gt;,
+      "running_total": {
+        "total_seconds": &lt;float: total coding activity for this user as seconds&gt;,
+        "human_readable_total": &lt;string: total coding activity for this user as human readable string&gt;,
+        "daily_average": &lt;float: daily average for this user as seconds&gt;,
+        "human_readable_daily_average": &lt;string: daily average for this user as human readable string&gt;,
+        "languages": [
+          {
+            "name": &lt;string: language name&gt;,
+            "total_seconds": &lt;float: total seconds user has logged in this language&gt;,
+          }, …
+        ],
+      },
+      "user": {
+        "id": &lt;string: unique id of user&gt;,
+        "email": &lt;string: email address of user, if public&gt;,
+        "username": &lt;string: users public username&gt;,
+        "full_name": &lt;string: full name of user&gt;,
+        "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+        "website": &lt;string: website of user&gt;,
+        "human_readable_website": &lt;string: website of user without url scheme&gt;,
+        "city": {
+          "country_code": &lt;string: two letter code, for ex: US or UK&gt;,
+          "name": &lt;string: city name, for ex: San Francisco&gt;,
+          "state": &lt;string: state name, for ex: California&gt;,
+          "title": &lt;string: city, state (or country if state has same name as city)&gt;
+        },
+        "is_email_public": &lt;boolean: whether this user's email should be shown publicly on leader boards&gt;,
+        "photo_public": &lt;boolean: whether this user's photo should be shown publicly on leader boards&gt;,
+      },
+    }, …
+  ],
+  "page": &lt;integer: current page number&gt;
+  "total_pages": &lt;integer: number of pages available&gt;,
+  "range": {
+    "start_date": &lt;string: start of this range as ISO 8601 UTC datetime&gt;,
+    "start_text": &lt;string: start of range in human-readable format relative to the current day&gt;,
+    "end_date": &lt;string: end of range as ISO 8601 UTC datetime&gt;,
+    "end_text": &lt;string: end of range in human-readable format relative to the current day&gt;,
+    "name": &lt;string: time range of this leaderboard&gt;,
+    "text": &lt;string: time range in human-readable format relative to the current day&gt;,
+  }
+  "language": &lt;string: language filter for this leaderboard&gt;,
+  "is_hireable": &lt;boolean: hireable filter for this leaderboard&gt;,
+  "country_code": &lt;string: country code filter for this leaderboard&gt;,
+  "modified_at": &lt;string: time when this leaderboard was last updated in ISO 8601 format&gt;
+  "timeout": &lt;integer: keystroke timeout setting in minutes used by this leaderboard&gt;,
+  "writes_only": &lt;boolean: writes_only setting used by this leaderboard&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#leaders-GET" aria-expanded="false" aria-controls="leaders-GET"> </a>
+
+    <p style="padding-left:20px;"><a href="/api/v1/leaders">Try it out</a></p>
+
+    
+
+  
+
+</div>
+        
+          <a name="machine_names"></a>
+<div class="api-section white-well">
+  <h1 id="machine_names" style="margin-bottom:30px">Machine Names</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/machine_names</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/machine_names</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of machines for this user.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_stats.machines</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="machine_names-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of this machine&gt;,
+    "name": &lt;string: the machine’s name, normally the host name; when user’s preference is to show IPs in machine names, this will include the IP address of the machine.&gt;,
+    "value": &lt;string: local host name of this machine&gt;,
+    "ip": &lt;string: ip address of this machine&gt;,
+    "last_seen_at": &lt;string: time when this machine was last seen in ISO 8601 format&gt;,
+    "timezone": &lt;string: timezone sent with first heartbeat received for this machine, in Olson Country/Region format&gt;,
+    "created_at": &lt;string: time when this machine was first seen in ISO 8601 format&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#machine_names-GET" aria-expanded="false" aria-controls="machine_names-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="meta"></a>
+<div class="api-section white-well">
+  <h1 id="meta" style="margin-bottom:30px">Meta</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/meta</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Information about WakaTime, such as a list of public ip addresses used by WakaTime servers.</p>
+
+    
+
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="meta-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "ip_descriptions": &lt;object: explanation of each ip category (api, website, worker)&gt;,
+    "ips": {
+      "api": &lt;list of strings: ip addresses used by WakaTime api servers&gt;,
+      "website": &lt;list of strings: ip addresses used by WakaTime website servers&gt;,
+      "worker": &lt;list of strings: ip addresses used by WakaTime background worker servers&gt;
+    },
+    "last_modified_at": &lt;string: last time an IP was either added, removed, or modified in ISO 8601 format; use similar to etag, to sync your firewall configs only when IPs have changed&gt;
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#meta-GET" aria-expanded="false" aria-controls="meta-GET"> </a>
+
+    <p style="padding-left:20px;"><a href="/api/v1/meta">Try it out</a></p>
+
+    
+
+  
+
+</div>
+        
+          <a name="org_custom_rules"></a>
+<div class="api-section white-well">
+  <h1 id="org_custom_rules" style="margin-bottom:30px">Org Custom Rules</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/custom_rules</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:org/custom_rules</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of custom rules for this org.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_custom_rules-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "action": &lt;string: either "change" or "delete"&gt;,
+      "source": &lt;string: the heartbeat property to match against source_value&gt;,
+      "operation": &lt;string: one of "equals", "contains", "starts with", or "ends with"&gt;,
+      "source_value": &lt;string: the match string&gt;,
+      "destination": &lt;string: the heartbeat property to replace with destination_value&gt;,
+      "destination_value": &lt;string: the replacement string&gt;,
+      "priority": &lt;integer: a unique number determining the order this rule is executed on heartbeats; starts with 1; lower priorities are executed before higher priorities&gt;,
+    }, …
+  ],
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_custom_rules-GET" aria-expanded="false" aria-controls="org_custom_rules-GET"> </a>
+
+    
+
+    
+      <hr class="m-top-xs-60 m-bottom-xs-60" />
+    
+
+  
+
+    
+      <p><strong><code>PUT</code> <code>/api/v1/users/:user/orgs/:org/custom_rules</code></strong></p>
+    
+      <p><strong><code>PUT</code> <code>/api/v1/users/current/orgs/:org/custom_rules</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Updates an org’s custom rules. Accepts an array of rules and merges them with all team member custom rules.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">write_orgs</a></p>
+    
+
+    
+      <p><h4 class="m-top-xs-30">JSON POST Data</h4></p>
+      <p><pre><code>[
+  {
+    "action": &lt;string: either "change" or "delete"&gt;,
+    "source": &lt;string: the heartbeat property to match against source_value&gt;,
+    "operation": &lt;string: one of "equals", "contains", "starts with", or "ends with"&gt;,
+    "source_value": &lt;string: the match string&gt;,
+    "destination": &lt;string: the heartbeat property to replace with destination_value&gt;,
+    "destination_value": &lt;string: the replacement string&gt;,
+    "priority": &lt;integer: a unique number determining the order this rule is executed on heartbeats; starts with 1; lower priorities are executed before higher priorities&gt;,
+  }, …
+]
+</code></pre></p>
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_custom_rules-PUT" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "changes": {
+      "added": [],
+      "removed": [],
+      "rearranged": [],
+    }
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_custom_rules-PUT" aria-expanded="false" aria-controls="org_custom_rules-PUT"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="org_dashboard_durations"></a>
+<div class="api-section white-well">
+  <h1 id="org_dashboard_durations" style="margin-bottom:30px">Org Dashboard Durations</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/dashboards/:dashboard/durations</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:orgs/dashboards/:dashboard/durations</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A dashboard's coding activity for the given day as an array of durations for each dashboard dev.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>date</code> - <code>Date</code> - required - Date in YYYY-MM-DD format.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show durations for this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show durations for these branches; comma separated list of branch names.</p>
+      
+        <p><code>slice_by</code> - <code>String</code> - optional - Optional primary key to use when slicing durations. Defaults to “project”. Can be “project”, “entity”, “language”, “dependencies”, “os”, “editor”, “category”, or “machine”.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_dashboard_durations-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+      "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+      "timezone": &lt;string: timezone used for this member’s durations in Olson Country/Region format&gt;
+      "member": {
+        "id": &lt;string: unique id of user&gt;,
+        "email": &lt;string: email address&gt;,
+        "full_name": &lt;string: full name of user&gt;,
+        "photo": &lt;string: url of photo for this user&gt;,
+        "username": &lt;string: users public username&gt;,
+        "default_personal_privacy": &lt;string: the dev’s default personal project privacy setting, either visible or hidden&gt;,
+      },
+      "durations": {
+        "project": &lt;string: project name&gt;,
+        "time": &lt;float: start of this duration as ISO 8601 UTC datetime; numbers after decimal point are fractions of a second&gt;,
+        "duration": &lt;float: length of time of this duration in seconds&gt;
+      }, …
+    }, …
+  ],
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_dashboard_durations-GET" aria-expanded="false" aria-controls="org_dashboard_durations-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="org_dashboard_member_durations"></a>
+<div class="api-section white-well">
+  <h1 id="org_dashboard_member_durations" style="margin-bottom:30px">Org Dashboard Member Durations</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/dashboards/:dashboard/members/:member/durations</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:orgs/dashboards/:dashboard/members/:member/durations</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A dashboard member's coding activity for the given day as an array of durations.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>date</code> - <code>Date</code> - required - Date in YYYY-MM-DD format.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show durations for this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show durations for these branches; comma separated list of branch names.</p>
+      
+        <p><code>slice_by</code> - <code>String</code> - optional - Optional primary key to use when slicing durations. Defaults to “project”. Can be “project”, “entity”, “language”, “dependencies”, “os”, “editor”, “category”, or “machine”.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_dashboard_member_durations-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "project": &lt;string: project name&gt;,
+      "time": &lt;float: start of this duration as ISO 8601 UTC datetime; numbers after decimal point are fractions of a second&gt;,
+      "duration": &lt;float: length of time of this duration in seconds&gt;
+    }, …
+  ],
+  "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+  "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+  "timezone": &lt;string: timezone used for this request in Olson Country/Region format&gt;
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_dashboard_member_durations-GET" aria-expanded="false" aria-controls="org_dashboard_member_durations-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="org_dashboard_member_summaries"></a>
+<div class="api-section white-well">
+  <h1 id="org_dashboard_member_summaries" style="margin-bottom:30px">Org Dashboard Member Summaries</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/dashboards/:dashboard/members/:member/summaries</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:org/dashboards/:dashboard/members/:member/summaries</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>An organization dashboard member’s coding activity for the given time range as an array of summaries segmented by day.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>start</code> - <code>Date</code> - required - Start date of the time range.</p>
+      
+        <p><code>end</code> - <code>Date</code> - required - End date of the time range.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show time logged to this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show coding activity for these branches; comma separated list of branch names.</p>
+      
+        <p><code>range</code> - <code>String</code> - optional - Alternative way to supply start and end dates. Can be one of “Today”, “Yesterday”, “Last 7 Days”, “Last 7 Days from Yesterday”, “Last 14 Days”, “Last 30 Days”, “This Week”, “Last Week”, “This Month”, or “Last Month”.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_dashboard_member_summaries-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "grand_total": {
+        "digital": &lt;string: total coding activity in digital clock format&gt;,
+        "hours": &lt;integer: hours portion of coding activity&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;
+      },
+      "projects": [
+        {
+          "name": &lt;string: project name&gt;,
+          "total_seconds": &lt;float: total coding activity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this project&gt;,
+          "digital": &lt;string: total coding activity for this project in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this project&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this project&gt;
+        }, …
+      ],
+      "languages": [
+        {
+          "name": &lt;string: language name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this language as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this language&gt;,
+          "digital": &lt;string: total coding activity for this language in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this language&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this language&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this language&gt;
+        }, …
+      ],
+      "editors": [
+        {
+          "name": &lt;string: editor name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this editor as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this editor&gt;,
+          "digital": &lt;string: total coding activity for this editor in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this editor&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this editor&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this editor&gt;
+        }, …
+      ],
+      "operating_systems": [
+        {
+          "name": &lt;string: os name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this os as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this os&gt;,
+          "digital": &lt;string: total coding activity for this os in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this os&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this os&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this os&gt;
+        }, …
+      ],
+      "branches": [ // included only when project url parameter used
+        {
+          "name": &lt;string: branch name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this branch as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this branch&gt;,
+          "digital": &lt;string: total coding activity for this branch in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this branch&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this branch&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this branch&gt;
+        }, …
+      ],
+      "entities": [ // included only when project url parameter used
+        {
+          "name": &lt;string: entity name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this entity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this entity&gt;,
+          "digital": &lt;string: total coding activity for this entity in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this entity&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this entity&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this entity&gt;
+        }, …
+      ],
+      "range": {
+        "date": &lt;string: this day as Date string in YEAR-MONTH-DAY format&gt;,
+        "start": &lt;string: start of this day as ISO 8601 UTC datetime&gt;,
+        "end": &lt;string: end of this day as ISO 8601 UTC datetime&gt;,
+        "text": &lt;string: this day in human-readable format relative to the current day&gt;,
+        "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+      }
+    }, …
+  ],
+  "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+  "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+  "default_personal_privacy": &lt;string: the dev’s default personal project privacy setting, either visible or hidden&gt;,
+  "cumulative_total": {
+    "seconds": &lt;float: cumulative number of seconds over the date range of summaries&gt;,
+    "text": &lt;string: cumulative total coding activity in human readable format&gt;,
+  },
+  "daily_average": {
+    "holidays": &lt;integer: number of days in this range with no coding time logged&gt;,
+    "days_including_holidays": &lt;integer: number of days in this range&gt;,
+    "days_minus_holidays": &lt;integer: number of days in this range excluding days with no activity&gt;,
+    "seconds": &lt;float: average coding activity per day as seconds for the given range of time, excluding Other language&gt;,
+    "text": &lt;string: daily average, excluding Other language, as human readable string&gt;,
+    "seconds_including_other_language": &lt;float: average coding activity per day as seconds for the given range of time&gt;,
+    "text_including_other_language": &lt;string: daily average as human readable string&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_dashboard_member_summaries-GET" aria-expanded="false" aria-controls="org_dashboard_member_summaries-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="org_dashboard_members"></a>
+<div class="api-section white-well">
+  <h1 id="org_dashboard_members" style="margin-bottom:30px">Org Dashboard Members</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/dashboards/:dashboard/members</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:org/dashboards/:dashboard/members</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List an organization’s members.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_dashboard_members-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique id of user&gt;,
+      "email": &lt;string: email address&gt;,
+      "full_name": &lt;string: full name of user&gt;,
+      "is_view_only": &lt;boolean: when true, this member’s coding activity is hidden from the dashboard&gt;,
+      "photo": &lt;string: url of photo for this user&gt;,
+      "username": &lt;string: users public username&gt;,
+    }, …
+  ],
+  "next_page": &lt;integer: the next page number, if available&gt;,
+  "page": &lt;integer: the current page number&gt;,
+  "prev_page": &lt;integer: the previous page number, if available&gt;,
+  "total": &lt;integer: total number of dashboard members&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_dashboard_members-GET" aria-expanded="false" aria-controls="org_dashboard_members-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="org_dashboard_summaries"></a>
+<div class="api-section white-well">
+  <h1 id="org_dashboard_summaries" style="margin-bottom:30px">Org Dashboard Summaries</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/dashboards/:dashboard/summaries</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:org/dashboards/:dashboard/summaries</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>An organization dashboard’s coding activity for the given day as an array of summaries for each dashboard dev.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>date</code> - <code>Date</code> - required - Date in YYYY-MM-DD format.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show time logged to this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show coding activity for these branches; comma separated list of branch names.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_dashboard_summaries-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "grand_total": {
+        "digital": &lt;string: total coding activity in digital clock format&gt;,
+        "hours": &lt;integer: hours portion of coding activity&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;
+      },
+      "projects": [
+        {
+          "name": &lt;string: project name&gt;,
+          "total_seconds": &lt;float: total coding activity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this project&gt;,
+          "digital": &lt;string: total coding activity for this project in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this project&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this project&gt;
+        }, …
+      ],
+      "languages": [
+        {
+          "name": &lt;string: language name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this language as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this language&gt;,
+          "digital": &lt;string: total coding activity for this language in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this language&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this language&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this language&gt;
+        }, …
+      ],
+      "editors": [
+        {
+          "name": &lt;string: editor name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this editor as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this editor&gt;,
+          "digital": &lt;string: total coding activity for this editor in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this editor&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this editor&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this editor&gt;
+        }, …
+      ],
+      "operating_systems": [
+        {
+          "name": &lt;string: os name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this os as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this os&gt;,
+          "digital": &lt;string: total coding activity for this os in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this os&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this os&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this os&gt;
+        }, …
+      ],
+      "branches": [ // included only when project url parameter used
+        {
+          "name": &lt;string: branch name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this branch as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this branch&gt;,
+          "digital": &lt;string: total coding activity for this branch in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this branch&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this branch&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this branch&gt;
+        }, …
+      ],
+      "entities": [ // included only when project url parameter used
+        {
+          "name": &lt;string: entity name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this entity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this entity&gt;,
+          "digital": &lt;string: total coding activity for this entity in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this entity&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this entity&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this entity&gt;
+        }, …
+      ],
+      "range": {
+        "date": &lt;string: this day as Date string in YEAR-MONTH-DAY format&gt;,
+        "start": &lt;string: start of this day as ISO 8601 UTC datetime&gt;,
+        "end": &lt;string: end of this day as ISO 8601 UTC datetime&gt;,
+        "text": &lt;string: this day in human-readable format relative to the current day&gt;,
+        "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+      },
+      "member": {
+        "id": &lt;string: unique id of user&gt;,
+        "email": &lt;string: email address&gt;,
+        "full_name": &lt;string: full name of user&gt;,
+        "photo": &lt;string: url of photo for this user&gt;,
+        "username": &lt;string: users public username&gt;,
+        "default_personal_privacy": &lt;string: the dev’s default personal project privacy setting, either visible or hidden&gt;,
+      },
+    }, …
+  ],
+  "cumulative_total": {
+    "seconds": &lt;float: cumulative number of seconds for all devs for this day&gt;,
+    "text": &lt;string: cumulative total coding activity in human readable format&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_dashboard_summaries-GET" aria-expanded="false" aria-controls="org_dashboard_summaries-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="org_dashboards"></a>
+<div class="api-section white-well">
+  <h1 id="org_dashboards" style="margin-bottom:30px">Org Dashboards</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs/:org/dashboards</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs/:org/dashboards</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List the organization’s dashboards.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="org_dashboards-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique id of this dashboard&gt;,
+      "full_name": &lt;string: this dashboard’s name&gt;,
+      "created_by": &lt;string: name of user who created this dashboard&gt;,
+      "timezone": &lt;string: the dashboard's timezone in Olson Country/Region format; defaults to the organization’s timezone&gt;,
+      "has_changed_timezone": &lt;boolean: whether this dashboard’s timezone is different from the organization’s timezone preference&gt;,
+      "members_count": &lt;integer: total number of members in this dashboard&gt;,
+      "members_count_human_readable": &lt;string: number of members in this dashboard as string&gt;,
+      "is_current_user_member": &lt;boolean: whether the currently authenticated user is a member of this dashboard&gt;,
+      "is_viewing_restricted": &lt;boolean: whether reading this dashboard is restricted to an allowed list of members&gt;,
+      "is_manual_time_hidden": &lt;boolean: whether this dashboard has manual time entries hidden&gt;,
+      "can_current_user_view": &lt;boolean: whether the currently authenticated user can view this dashboard&gt;,
+      "can_current_user_request_to_view": &lt;boolean: whether the currently authenticated user can request to view this dashboard&gt;,
+      "can_current_user_request_to_join": &lt;boolean: whether the currently authenticated user can request to join this dashboard&gt;,
+      "can_current_user_add_members": &lt;boolean: whether the currently authenticated user can add members to this dashboard&gt;,
+      "can_current_user_remove_members": &lt;boolean: whether the currently authenticated user can remove members from this dashboard&gt;,
+      "can_current_user_delete": &lt;boolean: whether the currently authenticated user can delete this dashboard&gt;,
+      "created_at": &lt;string: time when user was created in ISO 8601 format&gt;,
+      "modified_at": &lt;string: time when user was last modified in ISO 8601 format&gt;,
+    }, …
+  ],
+  "next_page": &lt;integer: the next page number, if available&gt;,
+  "page": &lt;integer: the current page number&gt;,
+  "prev_page": &lt;integer: the previous page number, if available&gt;,
+  "total": &lt;integer: total number of dashboards in this org&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#org_dashboards-GET" aria-expanded="false" aria-controls="org_dashboards-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="orgs"></a>
+<div class="api-section white-well">
+  <h1 id="orgs" style="margin-bottom:30px">Orgs</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/orgs</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/orgs</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List a user’s organizations.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_orgs</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="orgs-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique id of org&gt;,
+      "name": &lt;string: the org’s name.&gt;,
+      "default_project_privacy": &lt;string: the user’s default privacy for projects on dashboards; can be "visible" or "hidden"&gt;,
+      "invited_people_count": &lt;integer: number of pending invites&gt;,
+      "invited_people_count_human_readable": &lt;string: number of pending invites as string&gt;,
+      "is_duration_visible": &lt;boolean: when true, people in this org can see each other’s durations coding activity&gt;,
+      "people_count": &lt;integer: number of people in this org&gt;,
+      "people_count_human_readable": &lt;string: number of people in this org as string&gt;,
+      "timeout": &lt;integer: this organization’s keystroke timeout preference&gt;,
+      "timezone": &lt;integer: this organization’s timezone preference&gt;,
+      "writes_only": &lt;integer: this organization’s writes-only preference&gt;
+      "can_current_user_list_dashboards": &lt;boolean: whether the currently authenticated user can list dashboards&gt;,
+      "can_current_user_create_dashboards": &lt;boolean: whether the currently authenticated user can create dashboards&gt;,
+      "can_current_user_display_coding_on_dashboards": &lt;boolean: whether the currently authenticated user can display their coding activity on dashboards&gt;,
+      "can_current_user_view_all_dashboards": &lt;boolean: whether the currently authenticated user can view dashboards in this org without first being invited&gt;,
+      "can_current_user_add_people_to_dashboards": &lt;boolean: whether the currently authenticated user can add people to dashboards&gt;,
+      "can_current_user_remove_people_from_dashboards": &lt;boolean: whether the currently authenticated user can remove people from dashboards&gt;,
+      "can_current_user_edit_and_delete_dashboards": &lt;boolean: whether the currently authenticated user can edit and delete dashboards&gt;,
+      "can_current_user_add_people_to_org": &lt;boolean: whether the currently authenticated user can add people to this org&gt;,
+      "can_current_user_remove_people_from_org": &lt;boolean: whether the currently authenticated user can remove people from this org&gt;,
+      "can_current_user_manage_groups": &lt;boolean: whether the currently authenticated user can add, manage, and delete groups and permissions&gt;,
+      "can_current_user_view_audit_log": &lt;boolean: whether the currently authenticated user can view the org’s audit log&gt;,
+      "can_current_user_edit_org": &lt;boolean: whether the currently authenticated user can edit this org’s preferences&gt;,
+      "can_current_user_manage_billing": &lt;boolean: whether the currently authenticated user can manage this org’s billing&gt;,
+      "can_current_user_delete_org": &lt;boolean: whether the currently authenticated user can delete this org&gt;,
+      "created_at": &lt;string: time when user was created in ISO 8601 format&gt;,
+      "modified_at": &lt;string: time when user was last modified in ISO 8601 format&gt;,
+    }, …
+  ],
+  "next_page": &lt;integer: the next page number, if available&gt;,
+  "page": &lt;integer: the current page number&gt;,
+  "prev_page": &lt;integer: the previous page number, if available&gt;,
+  "total": &lt;integer: total number of orgs&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#orgs-GET" aria-expanded="false" aria-controls="orgs-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="private_leaderboards"></a>
+<div class="api-section white-well">
+  <h1 id="private_leaderboards" style="margin-bottom:30px">Private Leaderboards</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/leaderboards</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/leaderboards</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List user’s private leaderboards. Same as <a href="/leaders/sec">this page</a>.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_private_leaderboards</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="private_leaderboards-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "can_delete": &lt;boolean: true if user has access to delete this leaderboard&gt;,
+      "can_edit": &lt;boolean: true if user has access to edit this leaderboard&gt;,
+      "created_at": &lt;string: time when leaderboard was created in ISO 8601 format&gt;,
+      "has_available_seat": &lt;boolean: true if this leaderboard has room for more members&gt;,
+      "id": &lt;string: unique id of leaderboard&gt;,
+      "members_count": &lt;int: number of members in this private leaderboard&gt;,
+      "members_with_timezones_count": &lt;int: number of members who have timezones set; when a user does not have a timezone, they will be hidden from leaderboards&gt;,
+      "modified_at": &lt;string: time when leaderboard was last modified in ISO 8601 format&gt;,
+      "name": &lt;string: display name&gt;,
+      "time_range": &lt;string: time range of this leaderboard; always "last_7_days"&gt;,
+    }, …
+  ],
+  "total": &lt;integer: total number of private leaderboards&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#private_leaderboards-GET" aria-expanded="false" aria-controls="private_leaderboards-GET"> </a>
+
+    <p style="padding-left:20px;"><a href="/api/v1/users/current/leaderboards">Try it out</a></p>
+
+    
+
+  
+
+</div>
+        
+          <a name="private_leaderboards_leaders"></a>
+<div class="api-section white-well">
+  <h1 id="private_leaderboards_leaders" style="margin-bottom:30px">Private Leaderboards Leaders</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/leaderboards/:board</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/leaderboards/:board</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of users in this private leaderboard ranked by coding activity in descending order.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>language</code> - <code>String</code> - optional - Filter leaders by a specific language.</p>
+      
+        <p><code>country_code</code> - <code>String</code> - optional - Filter leaders by two-character country code.</p>
+      
+        <p><code>page</code> - <code>Integer</code> - optional - Page number of leaderboard. If authenticated, defaults to the page containing the currently authenticated user.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_private_leaderboards</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="private_leaderboards_leaders-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "rank": &lt;int: rank of this leaderboard member&gt;,
+      "page": &lt;integer: page containing the currently authorized user&gt;,
+      "user": {
+        "id": &lt;string: unique id of user&gt;,
+        "email": &lt;string: email address of user, if public&gt;,
+        "username": &lt;string: users public username&gt;,
+        "full_name": &lt;string: full name of user&gt;,
+        "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+        "website": &lt;string: website of user&gt;,
+        "human_readable_website": &lt;string: website of user without url scheme&gt;,
+        "is_hireable": &lt;boolean: represents the “hireable” badge on user profiles&gt;,
+        "city": {
+          "country_code": &lt;string: two letter code, for ex: US or UK&gt;,
+          "name": &lt;string: city name, for ex: San Francisco&gt;,
+          "state": &lt;string: state name, for ex: California&gt;,
+          "title": &lt;string: city, state (or country if state has same name as city)&gt;
+        },
+        "is_email_public": &lt;boolean: whether this user's email should be shown publicly on leader boards&gt;,
+        "photo_public": &lt;boolean: whether this user's photo should be shown publicly on leader boards&gt;,
+      },
+    }, …
+  ],
+  "language": &lt;string: language filter for this leaderboard&gt;,
+  "country_code": &lt;string: country code filter for this leaderboard&gt;,
+  "modified_at": &lt;string: time when leaderboard was last modified in ISO 8601 format&gt;,
+  "page": &lt;int: current page&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+  "range": {
+    "start_date": &lt;string: start of this range as ISO 8601 UTC datetime&gt;,
+    "start_text": &lt;string: start of range in human-readable format relative to the current day&gt;,
+    "end_date": &lt;string: end of range as ISO 8601 UTC datetime&gt;,
+    "end_text": &lt;string: end of range in human-readable format relative to the current day&gt;,
+    "name": &lt;string: time range of this leaderboard&gt;,
+    "text": &lt;string: time range in human-readable format relative to the current day&gt;,
+  }
+  "timeout": &lt;integer: keystroke timeout setting in minutes used by this leaderboard&gt;,
+  "total_pages": &lt;integer: number of pages available&gt;,
+  "writes_only": &lt;boolean: writes_only setting used by this leaderboard&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#private_leaderboards_leaders-GET" aria-expanded="false" aria-controls="private_leaderboards_leaders-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="program_languages"></a>
+<div class="api-section white-well">
+  <h1 id="program_languages" style="margin-bottom:30px">Program Languages</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/program_languages</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of all verified program languages supported by WakaTime.</p>
+
+    
+
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="program_languages-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    "id": &lt;string: unique id of this language&gt;,
+    "name": &lt;string: human readable name of this language&gt;
+    "color": &lt;string: hex color code, used when displaying this language on WakaTime charts&gt,
+    "is_verified": &lt;boolean: whether this language is verified, by GitHub’s linguist or manually by WakaTime admins&gt;,
+    "created_at": &lt;string: time when this language was created in ISO 8601 format&gt;,
+    "modified_at": &lt;string: time when this language was last modified in ISO 8601 format&gt;
+  ], …
+  "total": &lt;integer: number of program languages&gt;,
+  "total_pages": &lt;integer: number of pages&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#program_languages-GET" aria-expanded="false" aria-controls="program_languages-GET"> </a>
+
+    <p style="padding-left:20px;"><a href="/api/v1/program_languages">Try it out</a></p>
+
+    
+
+  
+
+</div>
+        
+          <a name="projects"></a>
+<div class="api-section white-well">
+  <h1 id="projects" style="margin-bottom:30px">Projects</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/projects</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/projects</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of WakaTime projects for the current user.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>q</code> - <code>String</code> - optional - Filter project names by a search term.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_stats.projects</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="projects-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "id": &lt;string: unique project id&gt;,
+      "name": &lt;string: project name&gt;,
+      "repository": &lt;string: associated repository if connected&gt;,
+      "badge": &lt;string: associated project badge if enabled&gt;,
+      "color": &lt;string: custom project color as hex string, or null if using default color&gt;,
+      "clients": &lt;list: clients associated with this project&gt;,
+      "has_public_url": &lt;boolean: whether this project has a shareable url defined&gt;,
+      "human_readable_last_heartbeat_at": &lt;string: time when project last received code stats as human readable string&gt;,
+      "last_heartbeat_at": &lt;string: time when project last received code stats in ISO 8601 format&gt;,
+      "human_readable_first_heartbeat_at": &lt;string: time when project first received code stats as human readable string; currently only set for users who signed up after 2024-02-05T00:00:00Z UTC&gt;,
+      "first_heartbeat_at": &lt;string: time when project first received code stats in ISO 8601 format; currently only set for users who signed up after 2024-02-05T00:00:00Z UTC&gt;,
+      "url": &lt;string: url of this project relative to wakatime.com&gt;,
+      "urlencoded_name": &lt;string: project name url entity encoded&gt;,
+      "created_at": &lt;string: time when project was created in ISO 8601 format&gt;,
+    }, …
+  ],
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#projects-GET" aria-expanded="false" aria-controls="projects-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="stats"></a>
+<div class="api-section white-well">
+  <h1 id="stats" style="margin-bottom:30px">Stats</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/stats</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/stats</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/stats/:range</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/stats/:range</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A user's coding activity for the given time range. Optional <code>range</code> can be a <code>YYYY</code> year, <code>YYYY-MM</code> month, or one of <code>last_7_days</code>, <code>last_30_days</code>, <code>last_6_months</code>, <code>last_year</code>, or <code>all_time</code>. When <code>range</code> isn’t present, the user’s public profile range is used. For accounts subscribed to the free plan, time ranges &gt;= one year are updated on the first request. It’s best to always check <code>is_up_to_date</code> and retry your request when the response is stale. Stats are read-only representations of <a href="#heartbeats">Heartbeats</a>, <a href="#durations">Durations</a>, and <a href="#summaries">Summaries</a>, created by joining multiple Heartbeats together when they’re within 15 minutes of each other. The 15 minutes default can be changed with your account’s Keystroke Timeout preference.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>timeout</code> - <code>Integer</code> - optional - The keystroke timeout value used to calculate these stats. Defaults the the user&#39;s keystroke timeout value.</p>
+      
+        <p><code>writes_only</code> - <code>Boolean</code> - optional - The writes_only value used to calculate these stats. Defaults to the user&#39;s writes_only setting.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_stats</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="stats-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "total_seconds": &lt;float: total coding activity, excluding "Other" language, as seconds for the given range of time&gt;,
+    "total_seconds_including_other_language": &lt;float: total coding activity as seconds for the given range of time&gt;,
+    "human_readable_total": &lt;string: total coding activity, excluding "Other" language, as human readable string&gt;,
+    "human_readable_total_including_other_language": &lt;string: total coding activity as human readable string&gt;,
+    "daily_average": &lt;float: average coding activity per day as seconds for the given range of time, excluding Other language&gt;,
+    "daily_average_including_other_language": &lt;float: average coding activity per day as seconds for the given range of time&gt;,
+    "human_readable_daily_average": &lt;string: daily average as human readable string, excluding Other language&gt;,
+    "human_readable_daily_average_including_other_language": &lt;string: daily average as human readable string&gt;,
+    "categories": [
+      {
+        "name": &lt;string: name of category, for ex: Coding or Debugging&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this category&gt;,
+        "digital": &lt;string: total coding activity for this category in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this category&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this category&gt;
+      }, …
+    ],
+    "projects": [
+      {
+        "name": &lt;string: project name&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this project&gt;,
+        "digital": &lt;string: total coding activity for this project in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this project&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this project&gt;
+      }, …
+    ],
+    "languages": [
+      {
+        "name": &lt;string: language name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this language as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this language&gt;,
+        "digital": &lt;string: total coding activity for this language in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this language&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this language&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this language&gt;
+      }, …
+    ],
+    "editors": [
+      {
+        "name": &lt;string: editor name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this editor as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this editor&gt;,
+        "digital": &lt;string: total coding activity for this editor in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this editor&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this editor&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this editor&gt;
+      }, …
+    ],
+    "operating_systems": [
+      {
+        "name": &lt;string: os name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this os as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this os&gt;,
+        "digital": &lt;string: total coding activity for this os in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this os&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this os&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this os&gt;
+      }, …
+    ],
+    "dependencies": [
+      {
+        "name": &lt;string: dependency name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this dependency as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this dependency&gt;,
+        "digital": &lt;string: total coding activity for this dependency in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this dependency&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this dependency&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this dependency&gt;
+      }, …
+    ],
+    "machines": [
+      {
+        "name": &lt;string: machine hostname and ip address&gt;,
+        "machine_name_id": &lt;string: unique id of this machine&gt;,
+        "total_seconds": &lt;float: total coding activity spent on this machine as seconds&gt;,
+        "percent": &lt;float: percent of time spent on this machine&gt;,
+        "digital": &lt;string: total coding activity for this machine in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this machine&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this machine&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this machine&gt;
+      }, …
+    ],
+    "best_day": {
+      "date": &lt;string: day with most coding time logged as Date string in YEAR-MONTH-DAY format&gt;,
+      "text": &lt;string: total coding activity for this day in human readable format&gt;,
+      "total_seconds": &lt;float: number of seconds of coding activity, including other language, for this day&gt;
+    },
+    "range": &lt;string: time range of these stats&gt;,
+    "human_readable_range": &lt;string: time range as human readable string&gt;,
+    "holidays": &lt;integer: number of days in this range with no coding time logged&gt;,
+    "days_including_holidays": &lt;integer: number of days in this range&gt;,
+    "days_minus_holidays": &lt;integer: number of days in this range excluding days with no coding time logged&gt;,
+    "status": &lt;string: status of these stats in the cache&gt;,
+    "percent_calculated": &lt;integer: percent these stats have finished updating in the background&gt;,
+    "is_already_updating": &lt;boolean: true if these stats are being updated in the background&gt;,
+    "is_coding_activity_visible": &lt;boolean: true if this user's coding activity is publicly visible&gt;,
+    "is_language_usage_visible": &lt;boolean: true if this user's language stats are publicly visible&gt;,
+    "is_editor_usage_visible": &lt;boolean: true if this user's editor stats are publicly visible&gt;,
+    "is_category_usage_visible": &lt;boolean: true if this user's category stats are publicly visible&gt;,
+    "is_os_usage_visible": &lt;boolean: true if this user's operating system stats are publicly visible&gt;,
+    "is_stuck": &lt;boolean: true if these stats got stuck while processing and will be recalculated in the background&gt;,
+    "is_including_today": &lt;boolean: true if these stats include the current day; normally false except range "all_time"&gt;,
+    "is_up_to_date": &lt;boolean: true if these stats are up to date; when false, stats are missing or from an old time range and will be refreshed soon&gt;,
+    "start": &lt;string: start of this time range as ISO 8601 UTC datetime&gt;,
+    "end": &lt;string: end of this time range as ISO 8601 UTC datetime&gt;,
+    "timezone": &lt;string: timezone used in Olson Country/Region format&gt;,
+    "timeout": &lt;integer: value of the user's keystroke timeout setting in minutes&gt;,
+    "writes_only": &lt;boolean: status of the user's writes_only setting&gt;,
+    "user_id": &lt;string: unique id of this user&gt;,
+    "username": &lt;string: public username for this user&gt;,
+    "created_at": &lt;string: time when these stats were created in ISO 8601 format&gt;,
+    "modified_at": &lt;string: time when these stats were last updated in ISO 8601 format&gt;
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#stats-GET" aria-expanded="false" aria-controls="stats-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="stats_aggregated"></a>
+<div class="api-section white-well">
+  <h1 id="stats_aggregated" style="margin-bottom:30px">Stats Aggregated</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/stats/:range</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>Aggregate stats of all WakaTime users over the given time range. <code>range</code> can be one of <code>last_7_days</code> or any year in the past since <code>2013</code> for ex: <code>2020</code>. Aggregate stats are only available with the same preferences as public profiles (Default 15m keystroke timeout preference). Yearly aggregate stats are calculated each year on Jan 1st.</p>
+
+    
+
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="stats_aggregated-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "categories": [
+      {
+        "name": &lt;string: name of this category, for ex: Coding or Debugging&gt;,
+        "is_verified": &lt;boolean: whether the category of activity is verified or unverified&gt;,
+        "average": {
+          "seconds": &lt;float: average number of seconds coded by all WakaTime users in this category&gt;,
+          "text": &lt;string: average time coded by all WakaTime users in this category as a human readable string&gt;,
+        },
+        "count": {
+          "text": &lt;string: number of WakaTime users who coded in this category in the given range&gt;,
+        },
+        "max": {
+          "seconds": &lt;float: number of seconds coded by the WakaTime user who coded the most time in this category&gt;,
+          "text": &lt;string: time coded by the WakaTime user who coded the most time in this category&gt;,
+        },
+        "median": {
+          "seconds": &lt;float: median number of seconds coded by all WakaTime users in this category&gt;,
+          "text": &lt;string: median time coded by all WakaTime users in this category as a human readable string&gt;,
+        },
+        "sum": {
+          "seconds": &lt;float: sum of all seconds coded by all WakaTime users in this category&gt;,
+          "text": &lt;string: sum of all time coded by all WakaTime users in this category as a human readable string&gt;,
+        },
+      }, …
+    ],
+    "daily_average": {
+      "average": {
+        "seconds": &lt;float: average number of seconds coded per day by all WakaTime users in given range&gt;,
+        "text": &lt;string: average time coded per day by all WakaTime users in given range as a human readable string&gt;,
+      },
+      "count": {
+        "text": &lt;string: number of WakaTime users in these aggregate stats&gt;,
+      },
+      "max": {
+        "seconds": &lt;float: number of seconds coded per day by the WakaTime user who coded the most time in the given range; this might not be the highest daily average, for ex: a user codes for 23h one day but then stops coding. That user’s daily average is 23h. The user with the most code time has a daily average of 12h. The max is 12h not 23h, because the user with 12h daily average coded more days and more total time than the user with 23h daily average.&gt;,
+        "text": &lt;string: daily average as human readable text of the WakaTime user who coded the most time in the given range&gt;,
+      },
+      "median": {
+        "seconds": &lt;float: median number of seconds coded per day by all WakaTime users in given range&gt;,
+        "text": &lt;string: median time coded per day by all WakaTime users in given range as a human readable string&gt;,
+      },
+    },
+    "editors": [
+      {
+        "name": &lt;string: name of this IDE, for ex: Coding or Debugging&gt;,
+        "is_verified": &lt;boolean: whether the IDE is verified or unverified&gt;,
+        "average": {
+          "seconds": &lt;float: average number of seconds coded by all WakaTime users with this IDE&gt;,
+          "text": &lt;string: average time coded by all WakaTime users with this IDE as a human readable string&gt;,
+        },
+        "count": {
+          "text": &lt;string: number of WakaTime users who coded with this IDE in the given range&gt;,
+        },
+        "max": {
+          "seconds": &lt;float: number of seconds coded by the WakaTime user who coded the most time with this IDE&gt;,
+          "text": &lt;string: time coded by the WakaTime user who coded the most time with this IDE&gt;,
+        },
+        "median": {
+          "seconds": &lt;float: median number of seconds coded by all WakaTime users with this IDE&gt;,
+          "text": &lt;string: median time coded by all WakaTime users with this IDE as a human readable string&gt;,
+        },
+        "sum": {
+          "seconds": &lt;float: sum of all seconds coded by all WakaTime users with this IDE&gt;,
+          "text": &lt;string: sum of all time coded by all WakaTime users with this IDE as a human readable string&gt;,
+        },
+      }, …
+    ],
+    "languages": [
+      {
+        "name": &lt;string: name of this language, for ex: Coding or Debugging&gt;,
+        "is_verified": &lt;boolean: whether the language is verified or unverified&gt;,
+        "average": {
+          "seconds": &lt;float: average number of seconds coded by all WakaTime users in this language&gt;,
+          "text": &lt;string: average time coded by all WakaTime users in this language as a human readable string&gt;,
+        },
+        "count": {
+          "text": &lt;string: number of WakaTime users who coded in this language in the given range&gt;,
+        },
+        "max": {
+          "seconds": &lt;float: number of seconds coded by the WakaTime user who coded the most time in this language&gt;,
+          "text": &lt;string: time coded by the WakaTime user who coded the most time in this language&gt;,
+        },
+        "median": {
+          "seconds": &lt;float: median number of seconds coded by all WakaTime users in this language&gt;,
+          "text": &lt;string: median time coded by all WakaTime users in this language as a human readable string&gt;,
+        },
+        "sum": {
+          "seconds": &lt;float: sum of all seconds coded by all WakaTime users in this language&gt;,
+          "text": &lt;string: sum of all time coded by all WakaTime users in this language as a human readable string&gt;,
+        },
+      }, …
+    ],
+    "operating_systems": [
+      {
+        "name": &lt;string: name of this os, for ex: Coding or Debugging&gt;,
+        "is_verified": &lt;boolean: whether the os is verified or unverified&gt;,
+        "average": {
+          "seconds": &lt;float: average number of seconds coded by all WakaTime users in this os&gt;,
+          "text": &lt;string: average time coded by all WakaTime users in this os as a human readable string&gt;,
+        },
+        "count": {
+          "text": &lt;string: number of WakaTime users who coded in this os in the given range&gt;,
+        },
+        "max": {
+          "seconds": &lt;float: number of seconds coded by the WakaTime user who coded the most time in this os&gt;,
+          "text": &lt;string: time coded by the WakaTime user who coded the most time in this os&gt;,
+        },
+        "median": {
+          "seconds": &lt;float: median number of seconds coded by all WakaTime users in this os&gt;,
+          "text": &lt;string: median time coded by all WakaTime users in this os as a human readable string&gt;,
+        },
+        "sum": {
+          "seconds": &lt;float: sum of all seconds coded by all WakaTime users in this os&gt;,
+          "text": &lt;string: sum of all time coded by all WakaTime users in this os as a human readable string&gt;,
+        },
+      }, …
+    ],
+    "total": {
+      "average": {
+        "seconds": &lt;float: average number of seconds coded by all WakaTime users in given range&gt;,
+        "text": &lt;string: average time coded by all WakaTime users in given range as a human readable string&gt;,
+      },
+      "count": {
+        "text": &lt;string: number of WakaTime users in these aggregate stats&gt;,
+      },
+      "max": {
+        "seconds": &lt;float: number of seconds coded by the WakaTime user who coded the most time in the given range&gt;,
+        "text": &lt;string: time coded by the WakaTime user who coded the most time in the given range&gt;,
+      },
+      "median": {
+        "seconds": &lt;float: median number of seconds coded by all WakaTime users in given range&gt;,
+        "text": &lt;string: median time coded by all WakaTime users in given range as a human readable string&gt;,
+      },
+      "sum": {
+        "seconds": &lt;float: sum of all seconds coded by all WakaTime users in given range&gt;,
+        "text": &lt;string: sum of all time coded by all WakaTime users in given range as a human readable string&gt;,
+      },
+    },
+    "range": {
+      "end_date": &lt;string: end of range as human readable date&gt;,
+      "end_text": &lt;string: end of range as ISO 8601 UTC datetime&gt;,
+      "name": &lt;string: range of these stats&gt;,
+      "start_date": &lt;string: start of range as human readable date&gt;,
+      "start_text": &lt;string: start of range as ISO 8601 UTC datetime&gt;,
+      "text": &lt;string: range in human-readable format&gt;,
+    },
+    "timeout": &lt;integer: the default Keystroke Timeout Preference for public stats (15)&gt;,
+    "writes_only": &lt;boolean: the default Writes Only Preference for public stats (false)&gt;,
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#stats_aggregated-GET" aria-expanded="false" aria-controls="stats_aggregated-GET"> </a>
+
+    <p style="padding-left:20px;"><a href="/api/v1/stats/2024">Try it out</a></p>
+
+    
+
+  
+
+</div>
+        
+          <a name="status_bar"></a>
+<div class="api-section white-well">
+  <h1 id="status_bar" style="margin-bottom:30px">Status Bar</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/status_bar/today</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/status_bar/today</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A user’s coding activity today for displaying in IDE text editor status bars. This is the same as <a href="#summaries">Summaries</a> with <code>range</code> of <code>“Today”</code>. This endpoint is only backed by cached data. If there’s no data yet in the cache, an empty Summary is returned while the cache updates in the background:<br><code>{
+  "data": {
+    "grand_total": {
+      "decimal":"",
+      "digital":"",
+      "hours":0,
+      "minutes":0,
+      "text":"",
+      "total_seconds":0
+    },
+    "categories":[],
+    "dependencies":[],
+    "editors":[],
+    "languages":[],
+    "machines":[],
+    "operating_systems":[],
+    "projects":[],
+    "range": {
+      "text":"Today",
+      "timezone":"UTC"
+    }
+  }
+}</code></p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_summaries</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="status_bar-GET" aria-expanded="false">
+      <pre><code>{
+  "cached_at": &lt;string: when this response was calculated and cached as ISO 8601 UTC datetime&gt;,
+  "has_team_features": &lt;boolean: true if user has access to team features&gt;,
+  "data": {
+    "grand_total": {
+      "decimal": &lt;string: total coding activity in decimal format&gt;,
+      "digital": &lt;string: total coding activity in digital clock format&gt;,
+      "hours": &lt;integer: hours portion of coding activity&gt;,
+      "minutes": &lt;integer: minutes portion of coding activity&gt;,
+      "text": &lt;string: total coding activity in human readable format&gt;,
+      "total_seconds": &lt;float: total coding activity as seconds&gt;
+    },
+    "categories": [
+      {
+        "name": &lt;string: name of category, for ex: Coding or Debugging&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this category&gt;,
+        "decimal": &lt;string: total coding activity for this category in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this category in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this category&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this category&gt;
+      }, …
+    ],
+    "projects": [
+      {
+        "name": &lt;string: project name&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this project&gt;,
+        "decimal": &lt;string: total coding activity for this project in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this project in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this project&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this project&gt;
+      }, …
+    ],
+    "languages": [
+      {
+        "name": &lt;string: language name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this language as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this language&gt;,
+        "decimal": &lt;string: total coding activity for this language in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this language in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this language&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this language&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this language&gt;
+      }, …
+    ],
+    "editors": [
+      {
+        "name": &lt;string: editor name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this editor as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this editor&gt;,
+        "decimal": &lt;string: total coding activity for this editor in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this editor in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this editor&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this editor&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this editor&gt;
+      }, …
+    ],
+    "operating_systems": [
+      {
+        "name": &lt;string: os name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this os as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this os&gt;,
+        "decimal": &lt;string: total coding activity for this os in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this os in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this os&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this os&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this os&gt;
+      }, …
+    ],
+    "dependencies": [
+      {
+        "name": &lt;string: dependency name&gt;,
+        "total_seconds": &lt;float: total coding activity spent in this dependency as seconds&gt;,
+        "percent": &lt;float: percent of time spent in this dependency&gt;,
+        "decimal": &lt;string: total coding activity for this dependency in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this dependency in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this dependency&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this dependency&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this dependency&gt;
+      }, …
+    ],
+    "machines": [
+      {
+        "name": &lt;string: machine hostname and ip address&gt;,
+        "machine_name_id": &lt;string: unique id of this machine&gt;,
+        "total_seconds": &lt;float: total coding activity spent on this machine as seconds&gt;,
+        "percent": &lt;float: percent of time spent on this machine&gt;,
+        "decimal": &lt;string: total coding activity for this machine in decimal format&gt;,
+        "digital": &lt;string: total coding activity for this machine in digital clock format&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "hours": &lt;integer: hours portion of coding activity for this machine&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity for this machine&gt;,
+        "seconds": &lt;integer: seconds portion of coding activity for this machine&gt;
+      }, …
+    ],
+    "range": {
+      "date": &lt;string: this day as Date string in YEAR-MONTH-DAY format&gt;,
+      "start": &lt;string: start of this day as ISO 8601 UTC datetime&gt;,
+      "end": &lt;string: end of this day as ISO 8601 UTC datetime&gt;,
+      "text": &lt;string: this day in human-readable format relative to the current day&gt;,
+      "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+    }
+  }
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#status_bar-GET" aria-expanded="false" aria-controls="status_bar-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="summaries"></a>
+<div class="api-section white-well">
+  <h1 id="summaries" style="margin-bottom:30px">Summaries</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/summaries</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/summaries</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A user's coding activity for the given time range as an array of summaries segmented by day. Summaries are read-only representations of <a href="#heartbeats">Heartbeats</a> and <a href="#durations">Durations</a>, created by joining multiple Heartbeats together when they’re within 15 minutes of each other. The 15 minutes default can be changed with your account’s Keystroke Timeout preference.</p>
+
+    
+      <p><h4 class="m-top-xs-30">URL Parameters</h4></p>
+      
+        <p><code>start</code> - <code>Date</code> - required - Start date of the time range.</p>
+      
+        <p><code>end</code> - <code>Date</code> - required - End date of the time range.</p>
+      
+        <p><code>project</code> - <code>String</code> - optional - Only show time logged to this project.</p>
+      
+        <p><code>branches</code> - <code>String</code> - optional - Only show coding activity for these branches; comma separated list of branch names.</p>
+      
+        <p><code>timeout</code> - <code>Integer</code> - optional - The keystroke timeout preference used when joining heartbeats into durations. Defaults the the user&#39;s keystroke timeout value. See the FAQ for more info.</p>
+      
+        <p><code>writes_only</code> - <code>Boolean</code> - optional - The writes_only preference. Defaults to the user&#39;s writes_only setting.</p>
+      
+        <p><code>timezone</code> - <code>String</code> - optional - The timezone for given start and end dates. Defaults to the user&#39;s timezone.</p>
+      
+        <p><code>range</code> - <code>String</code> - optional - Alternative way to supply start and end dates. Can be one of “Today”, “Yesterday”, “Last 7 Days”, “Last 7 Days from Yesterday”, “Last 14 Days”, “Last 30 Days”, “This Week”, “Last Week”, “This Month”, or “Last Month”.</p>
+      
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_summaries</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="summaries-GET" aria-expanded="false">
+      <pre><code>{
+  "data": [
+    {
+      "grand_total": {
+        "digital": &lt;string: total coding activity in digital clock format&gt;,
+        "hours": &lt;integer: hours portion of coding activity&gt;,
+        "minutes": &lt;integer: minutes portion of coding activity&gt;,
+        "text": &lt;string: total coding activity in human readable format&gt;,
+        "total_seconds": &lt;float: total coding activity as seconds&gt;
+      },
+      "categories": [
+        {
+          "name": &lt;string: name of category, for ex: Coding or Debugging&gt;,
+          "total_seconds": &lt;float: total coding activity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this category&gt;,
+          "digital": &lt;string: total coding activity for this category in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this category&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this category&gt;
+        }, …
+      ],
+      "projects": [
+        {
+          "name": &lt;string: project name&gt;,
+          "total_seconds": &lt;float: total coding activity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this project&gt;,
+          "digital": &lt;string: total coding activity for this project in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this project&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this project&gt;
+        }, …
+      ],
+      "languages": [
+        {
+          "name": &lt;string: language name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this language as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this language&gt;,
+          "digital": &lt;string: total coding activity for this language in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this language&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this language&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this language&gt;
+        }, …
+      ],
+      "editors": [
+        {
+          "name": &lt;string: editor name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this editor as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this editor&gt;,
+          "digital": &lt;string: total coding activity for this editor in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this editor&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this editor&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this editor&gt;
+        }, …
+      ],
+      "operating_systems": [
+        {
+          "name": &lt;string: os name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this os as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this os&gt;,
+          "digital": &lt;string: total coding activity for this os in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this os&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this os&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this os&gt;
+        }, …
+      ],
+      "dependencies": [
+        {
+          "name": &lt;string: dependency name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this dependency as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this dependency&gt;,
+          "digital": &lt;string: total coding activity for this dependency in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this dependency&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this dependency&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this dependency&gt;
+        }, …
+      ],
+      "machines": [
+        {
+          "name": &lt;string: machine hostname and ip address&gt;,
+          "machine_name_id": &lt;string: unique id of this machine&gt;,
+          "total_seconds": &lt;float: total coding activity spent on this machine as seconds&gt;,
+          "percent": &lt;float: percent of time spent on this machine&gt;,
+          "digital": &lt;string: total coding activity for this machine in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this machine&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this machine&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this machine&gt;
+        }, …
+      ],
+      "branches": [ // included only when project url parameter used
+        {
+          "name": &lt;string: branch name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this branch as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this branch&gt;,
+          "digital": &lt;string: total coding activity for this branch in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this branch&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this branch&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this branch&gt;
+        }, …
+      ],
+      "entities": [ // included only when project url parameter used
+        {
+          "name": &lt;string: entity name&gt;,
+          "total_seconds": &lt;float: total coding activity spent in this entity as seconds&gt;,
+          "percent": &lt;float: percent of time spent in this entity&gt;,
+          "digital": &lt;string: total coding activity for this entity in digital clock format&gt;,
+          "text": &lt;string: total coding activity in human readable format&gt;,
+          "hours": &lt;integer: hours portion of coding activity for this entity&gt;,
+          "minutes": &lt;integer: minutes portion of coding activity for this entity&gt;,
+          "seconds": &lt;integer: seconds portion of coding activity for this entity&gt;
+        }, …
+      ],
+      "range": {
+        "date": &lt;string: this day as Date string in YEAR-MONTH-DAY format&gt;,
+        "start": &lt;string: start of this day as ISO 8601 UTC datetime&gt;,
+        "end": &lt;string: end of this day as ISO 8601 UTC datetime&gt;,
+        "text": &lt;string: this day in human-readable format relative to the current day&gt;,
+        "timezone": &lt;string: timezone used in Olson Country/Region format&gt;
+      }
+    }, …
+  ],
+  "cumulative_total": {
+    "seconds": &lt;float: cumulative number of seconds over the date range of summaries&gt;,
+    "text": &lt;string: cumulative total coding activity in human readable format&gt;,
+    "decimal": &lt;string: cumulative total as a decimal&gt;,
+    "digital": &lt;string: cumulative total in digital clock format&gt;,
+  },
+  "daily_average": {
+    "holidays": &lt;integer: number of days in this range with no coding time logged&gt;,
+    "days_including_holidays": &lt;integer: number of days in this range&gt;,
+    "days_minus_holidays": &lt;integer: number of days in this range excluding days with no activity&gt;,
+    "seconds": &lt;float: average coding activity per day as seconds for the given range of time, excluding Other language&gt;,
+    "text": &lt;string: daily average, excluding Other language, as human readable string&gt;,
+    "seconds_including_other_language": &lt;float: average coding activity per day as seconds for the given range of time&gt;,
+    "text_including_other_language": &lt;string: daily average as human readable string&gt;,
+  },
+  "start": &lt;string: start of time range as ISO 8601 UTC datetime&gt;,
+  "end": &lt;string: end of time range as ISO 8601 UTC datetime&gt;,
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#summaries-GET" aria-expanded="false" aria-controls="summaries-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="user_agents"></a>
+<div class="api-section white-well">
+  <h1 id="user_agents" style="margin-bottom:30px">User Agents</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user/user_agents</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current/user_agents</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>List of plugins which have sent data for this user.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">read_stats.editors</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="user_agents-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of this user agent&gt;,
+    "value": &lt;string: a <a href="https://en.wikipedia.org/wiki/User_agent#Format_for_human-operated_web_browsers">user agent string</a>&gt;,
+    "editor": &lt;string: the editor/IDE name of this user agent&gt;,
+    "version": &lt;string: the wakatime plugin version of this user agent&gt;,
+    "os": &lt;string: operating system of this user agent&gt;,
+    "last_seen_at": &lt;string: time when this user agent was last seen in ISO 8601 format&gt;,
+    "is_browser_extension": &lt;boolean: true if this plugin is the browser-wakatime extension&gt;,
+    "is_desktop_app": &lt;boolean: true if this plugin is the macos-wakatime native desktop app&gt;,
+    "created_at": &lt;string: time when this user agent was first seen in ISO 8601 format&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#user_agents-GET" aria-expanded="false" aria-controls="user_agents-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+          <a name="users"></a>
+<div class="api-section white-well">
+  <h1 id="users" style="margin-bottom:30px">Users</h1>
+
+  
+
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/:user</code></strong></p>
+    
+      <p><strong><code>GET</code> <code>/api/v1/users/current</code></strong></p>
+    
+
+    <p><h4 class="m-top-xs-30">Description</h4></p>
+    <p>A single user.</p>
+
+    
+
+    
+      <p><h4 class="m-top-xs-30">Scope Required</h4></p>
+      <p><a href="#scopes">email</a></p>
+    
+
+    
+
+    <p><h4 class="m-top-xs-30">Example Response</h4></p>
+
+    <p>Response Code: <code>200</code></p>
+
+    <div class="collapse" id="users-GET" aria-expanded="false">
+      <pre><code>{
+  "data": {
+    "id": &lt;string: unique id of user&gt;,
+    "bio": &lt;string: optional user defined bio&gt;,
+    "has_premium_features": &lt;boolean: true if user has access to premium features&gt;,
+    "display_name": &lt;string: display name of this user taken from full_name or @username. Defaults to 'Anonymous User'&gt;,
+    "full_name": &lt;string: full name of user&gt;,
+    "email": &lt;string: email address&gt;,
+    "photo": &lt;string: url of photo for this user&gt;,
+    "is_email_public": &lt;boolean: whether this user's email should be shown on the public leader board&gt;,
+    "is_email_confirmed": &lt;boolean: whether this user's email address has been verified with a confirmation email&gt;,
+    "public_email": &lt;string: email address for public profile. Nullable.&gt;,
+    "photo_public": &lt;boolean: whether this user's photo should be shown on the public leader board&gt;,
+    "timezone": &lt;string: user's timezone in Olson Country/Region format&gt;,
+    "last_heartbeat_at": &lt;string: time of most recent heartbeat received in ISO 8601 format&gt;,
+    "last_plugin": &lt;string: user-agent string from the last plugin used&gt;,
+    "last_plugin_name": &lt;string: name of editor last used&gt;,
+    "last_project": &lt;string: name of last project coded in&gt;,
+    "last_branch": &lt;string: name of last branch coded in&gt;,
+    "plan": &lt;string: users subscription plan&gt;,
+    "username": &lt;string: users public username&gt;,
+    "website": &lt;string: website of user&gt;,
+    "human_readable_website": &lt;string: website of user without protocol part&gt;,
+    "wonderfuldev_username": &lt;string: wonderful.dev username of user&gt;,
+    "github_username": &lt;string: GitHub username of user&gt;,
+    "twitter_username": &lt;string: Twitter handle of user&gt;,
+    "linkedin_username": &lt;string: Linkedin username of user&gt;,
+    "city": {
+      "country_code": &lt;string: two letter code, for ex: US or UK&gt;,
+      "name": &lt;string: city name, for ex: San Francisco&gt;,
+      "state": &lt;string: state name, for ex: California&gt;,
+      "title": &lt;string: city, state (or country if state has same name as city)&gt;
+    },
+    "logged_time_public": &lt;boolean: coding activity should be shown on the public leader board&gt;,
+    "languages_used_public": &lt;boolean: languages used should be shown on the public leader board&gt;,
+    "editors_used_public": &lt;boolean: editors used shown on public profile&gt;,
+    "categories_used_public": &lt;boolean: categories used shown on public public&gt;,
+    "os_used_public": &lt;boolean: operating systems used shown on public public&gt;,
+    "is_hireable": &lt;boolean: user preference showing hireable badge on public profile&gt;,
+    "created_at": &lt;string: time when user was created in ISO 8601 format&gt;,
+    "modified_at": &lt;string: time when user was last modified in ISO 8601 format&gt;,
+  },
+}
+</code></pre>
+    </div>
+    <a role="button" class="collapse-control collapsed" data-toggle="collapse" href="#users-GET" aria-expanded="false" aria-controls="users-GET"> </a>
+
+    
+
+    
+
+  
+
+</div>
+        
+
+      </div>
+    </div>
+
+  </div>
+
+  
+    
+      
+        
+      
+      
+        
+      
+      
+  
+    
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+    
+      
+    
+  
+
+  <footer id="footer" class="   ">
+    <div class="container">
+      
+        <div class="row">
+          <div class="col-sm-12 col-md-5 center-xs left-md">
+            <ul>
+              <li class="credit">&copy; 2025 WakaTime</li>
+              <li><a href="/terms">Terms</a></li>
+              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="https://wakatime.io">Tutorials</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-2 center-xs">
+            <ul>
+              <li><a href="https://github.com/wakatime" rel="noopener noreferrer"><i class="fa fa-github-square"></i></a></li>
+              <li><a href="https://www.reddit.com/r/WakaTime/" rel="noopener noreferrer"><i class="fa fa-reddit-square"></i></a></li>
+              <li><a href="https://x.com/intent/user?screen_name=WakaTime" rel="noopener noreferrer"><svg class="x-icon" style="top:2px;left:0;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a></li>
+              <li><a href="https://wonderful.dev/c/WakaTime" rel="noopener noreferrer"><svg class="wonderfuldev-icon" style=""
+ role="img"
+ viewBox="0 0 410 199"
+ xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M276.673 20.96C276.673 58.83 265.583 100.11 247.003 131.38C237.573 147.25 226.483 160.44 213.963 170.81C198.153 162.65 186.183 151.77 179.153 144.38C191.373 136.56 202.013 125.06 210.983 109.97C228.523 80.45 234.773 44.63 234.773 20.96C234.773 9.38 244.153 0 255.723 0C267.293 0 276.673 9.38 276.673 20.96Z" />
+<path d="M213.963 170.81C193.003 188.19 167.993 197.7 139.933 198.72C138.873 198.76 137.803 198.78 136.733 198.78C106.703 198.78 74.4734 183.57 49.8934 157.65C28.5134 135.12 2.52341 93.55 0.0134129 23.49C-0.396587 11.92 8.64341 1.21001 20.2034 0.800011C20.4534 0.790011 20.7134 0.790009 20.9634 0.790009C32.1934 0.790009 41.4834 10.68 41.8934 21.99C43.9234 78.96 63.8934 111.53 80.2934 128.82C100.663 150.31 123.663 157.41 138.403 156.85C153.473 156.3 167.083 152.13 179.153 144.38C186.183 151.77 198.153 162.65 213.963 170.81Z" />
+<path d="M270.043 198.78C240.013 198.78 207.783 183.57 183.203 157.65C161.833 135.11 135.833 93.55 133.333 23.49C132.923 11.93 141.953 2.22 153.523 1.8C153.773 1.79 154.033 1.79 154.283 1.79C165.503 1.79 174.803 10.68 175.203 21.99C177.243 78.96 197.213 111.53 213.603 128.82C233.983 150.31 256.973 157.41 271.713 156.85C302.043 155.74 326.463 139.97 344.293 109.97C361.833 80.45 368.083 44.63 368.083 20.95C368.083 9.38 377.463 0 389.033 0C400.603 0 409.983 9.38 409.983 20.95C409.983 58.83 398.893 100.11 380.313 131.37C355.103 173.79 318.083 197.08 273.243 198.72C272.183 198.76 271.113 198.78 270.043 198.78Z" />
+</g>
+</svg></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-5 center-xs right-md">
+            <ul>
+              <li><a href="/plugins">Supported IDEs</a></li>
+              <li><a href="/leaders">Leaderboards</a></li>
+              <li><a href="https://status.wakatime.com">Status</a></li>
+              <li><a href="/help">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+  </footer>
+
+    
+  
+
+
+    
+      
+    
+
+    
+
+    
+
+    <script type="text/javascript" src="/static/sdist/d945ae57ad5844b8767bfb1ab7d10793.js"></script>
+
+    
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    
+
+    
+  <script type="text/javascript" src="/static/sdist/d4ae59462878021d6d3aeb7bf1c4fdfa.js"></script>
+
+    
+
+    
+      
+  
+
+
+
+  
+
+    
+
+    
+      
+    
+
+    
+    
+
+  </body>
+</html>

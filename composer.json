@@ -1,0 +1,42 @@
+{
+    "name": "vitexsoftware/wakatim2redmine",
+    "description": "Import Wakatime data into Redmine",
+    "keywords": [
+        "wakatime",
+        "redmine",
+        "import",
+        "data"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VitexSoftware\\": "src/",
+            "VitexSoftware\\WakaTime2RedMine\\": "src/WakaTime2RedMine/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CyberVitexus",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "vitexsoftware/ease-core": "dev-main",
+        "symfony/http-foundation": "7.4.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "^3.61",
+        "ergebnis/composer-normalize": "^2.43",
+        "ergebnis/php-cs-fixer-config": "^6.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+
+}
