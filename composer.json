@@ -24,7 +24,7 @@
     "minimum-stability": "dev",
     "require": {
         "vitexsoftware/ease-core": "dev-main",
-        "symfony/http-foundation": "8.0.0-BETA2"
+        "symfony/http-foundation": "8.0.0-RC1"
     },
     "require-dev": {
         "phpunit/phpunit": "*",
