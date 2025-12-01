@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8376fec9110b10069490aa4393d10a2e",
+    "content-hash": "556840d3ed30f6894122f88a16f08c74",
     "packages": [
         {
             "name": "pear/console_getopt",
@@ -288,7 +288,7 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v8.0.0-RC1",
+            "version": "v8.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
@@ -344,7 +344,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v8.0.0-RC1"
+                "source": "https://github.com/symfony/http-foundation/tree/v8.0.0"
             },
             "funding": [
                 {
