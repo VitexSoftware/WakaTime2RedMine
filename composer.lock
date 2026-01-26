@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4c023856ce721156c255fca78dd4768",
+    "content-hash": "1c11a2e884eca582d24d905ec32b9104",
     "packages": [
         {
             "name": "pear/console_getopt",
@@ -288,16 +288,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v8.0.3",
+            "version": "v8.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "514ec3aa7982f296b0ad0825f75b6be5779ae9e7"
+                "reference": "e33ba71e674a1bb16eb251688bd27c2ff67e0dc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/514ec3aa7982f296b0ad0825f75b6be5779ae9e7",
-                "reference": "514ec3aa7982f296b0ad0825f75b6be5779ae9e7",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/e33ba71e674a1bb16eb251688bd27c2ff67e0dc1",
+                "reference": "e33ba71e674a1bb16eb251688bd27c2ff67e0dc1",
                 "shasum": ""
             },
             "require": {
@@ -344,7 +344,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v8.0.3"
+                "source": "https://github.com/symfony/http-foundation/tree/v8.0.4"
             },
             "funding": [
                 {
@@ -364,7 +364,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-23T14:52:06+00:00"
+            "time": "2026-01-09T12:15:10+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
